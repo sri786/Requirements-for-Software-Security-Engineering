@@ -22,3 +22,31 @@ Claim 5:
 
 
 ## Delete everything above this for final turn in
+
+
+Requirements for Software Security Engineering
+25 October 2017
+Michael Galde
+Carmel Waka
+Olivier Avande
+Srikanth Vadla
+
+Our group R3tr0 focued on the software security aspect for the open source project called Pi-hole and have developed the following five assurance claims:
+Claim 1:
+and some details about this claim is
+Claim 2:
+And some details about this claim is
+Claim 3:
+and some details about this claim are
+Claim 4:
+and some details about this claim are
+Claim 5:
+and some more details about this claim are
+
+While researching this open source project we discovered the following security requirements while simulating the following mis-use requirements
+
+Follow up with Review OSS project documentation for alignment of security requirements with advertised features. Summarize your observations
+
+Follow up with Review OSS project documentation for security related configuration and installation issues. Summarize your observations.
+
+Conclusion
