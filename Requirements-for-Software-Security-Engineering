@@ -1,5 +1,24 @@
+## Delete everything below this area before turn in!!
 Requirements for Software Security Engineering: 2-3 page report that describes the following:
 List of final assurance claims
 Describe the security requirements for the project captured using mis-use case diagrams. Include links to Lucidchart mis-use cases.
 Review OSS project documentation for alignment of security requirements with advertised features. Summarize your observations
 Review OSS project documentation for security related configuration and installation issues. Summarize your observations.
+
+
+Current assurance claims:
+Claim 1: Pi-hole **admin interface** has no exploitable HTTP weaknesses 
+Claim 2: Pi-hole attack surface is minimized  
+Claim 3: The Pi-hole standard input validation minimizes the possibility of device compromise 
+Claim 4: Pi-Hole authentication mechanism is secure from brute force attacks
+Claim 5: Pi-hole DNS is adequately safe from denial of service attack  
+
+Final Assurance claims 
+Claim 1:
+Claim 2:
+Claim 3:
+Claim 4:
+Claim 5:
+
+
+## Delete everything above this for final turn in
