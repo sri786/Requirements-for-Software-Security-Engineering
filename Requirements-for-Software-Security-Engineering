@@ -18,7 +18,7 @@ Claim 1: <Michael>
 Claim 2: <Michael>
 Claim 3: 
 Claim 4:
-Claim 5: <Srikanth>
+Claim 5: 
 
 
 ## Delete everything above this for final turn in
@@ -32,20 +32,25 @@ Olivier Avande
 Srikanth Vadla
 
 Our group R3tr0 focued on the software security aspect for the open source project called Pi-hole and have developed the following five assurance claims:
-Claim 1:
-and some details about this claim is
-Claim 2:
-And some details about this claim is
-Claim 3:
-and some details about this claim are
-Claim 4:
-and some details about this claim are
-Claim 5:
-and some more details about this claim are
+Claim 1: <Michael Will edit this>
+and some details about this claim is <Michael Will edit this>
+Claim 2: <Michael Will edit this>
+And some details about this claim is <Michael Will edit this>
+Claim 3: <  Will edit this>
+and some details about this claim are <  Will edit this>
+Claim 4: <  Will edit this>
+and some details about this claim are <  Will edit this>
+Claim 5:<  Will edit this>
+and some more details about this claim are <  Will edit this>
 
 While researching this open source project we discovered the following security requirements while simulating the following mis-use requirements
 
 Follow up with Review OSS project documentation for alignment of security requirements with advertised features. Summarize your observations
+Feature 1 compared to advertised features
+Feature 2 compared to advertised features
+Feature 3 compared to advertised features
+feature 4 compared to advertised features
+feature 5 compared to advertised features
 
 Follow up with Review OSS project documentation for security related configuration and installation issues. Summarize your observations.
 
