@@ -16,7 +16,7 @@ Claim 5: Pi-hole DNS is adequately safe from denial of service attack
 Final Assurance claims 
 Claim 1: The Pi-hole user interface has no exploitable HTTP weakness 
 Claim 2: The Pi-hole software is designed to mimimize the attack surface of the system
-Claim 3: 
+Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
 Claim 4:
 Claim 5: 
 
