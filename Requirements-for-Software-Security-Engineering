@@ -10,14 +10,14 @@ Review OSS project documentation for security related configuration and installa
 
 
 Current assurance claims:
-Claim 1: Pi-hole **admin interface** has no exploitable HTTP weaknesses 
-Claim 2: Pi-hole attack surface is minimized  
-Claim 3: The Pi-hole standard input validation minimizes the possibility of device compromise 
+Claim 1: Pi-hole **admin interface** has no exploitable HTTP weaknesses
+Claim 2: Pi-hole attack surface is minimized
+Claim 3: The Pi-hole standard input validation minimizes the possibility of device compromise
 Claim 4: Pi-Hole authentication mechanism is secure from brute force attacks
-Claim 5: Pi-hole DNS is adequately safe from denial of service attack  
+Claim 5: Pi-hole DNS is adequately safe from denial of service attack
 
-Final Assurance claims 
-Claim 1: The Pi-hole user interface has no exploitable HTTP weakness 
+Final Assurance claims
+Claim 1: The Pi-hole user interface has no exploitable HTTP weakness
 Claim 2: The Pi-hole software is designed to mimimize the attack surface of the system
 Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
 Claim 4:
@@ -34,11 +34,11 @@ Carmel Waka
 Olivier Avande
 Srikanth Vadla
 
-Our group "R3tr0" focued on the software security aspect for the open source project called Pi-hole and have developed the following five assurance claims:
-Claim 1: The Pi-hole user interface has no exploitable HTTP weakness. 
-The Pi-hole makes use of lighhtpd software package due to its minimal framework and the ease of which the system can be configured. 
-Claim 2: <Michael Will edit this>
-And some details about this claim is <Michael Will edit this>
+Our group "R3tr0" focused on the software security aspect for the open source project called Pi-hole and have developed the following five assurance claims:
+Claim 1: The Pi-hole user interface has no exploitable HTTP weakness.
+The Pi-hole makes use of lighhtpd software package due to its minimal framework and the ease of which the system can be configured.
+Claim 2: Pi-hole attack surface is minimized
+The attack surface of the Pi-hole software is minimized by utilizing best practices approaches to software development and community involvement. 
 Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
 and some details about this claim are <  Will edit this>
 Claim 4: <  Will edit this>
@@ -48,7 +48,7 @@ The Pi-hole system uses dnsmasq as the underlying dns server to provide ad filte
 Like all dns services, it is exposed to denial of service. However, using the appropriate configuration it can be adequately secured.
 
 
-While researching this open source project we discovered the following security requirements while simulating the following mis-use requirements
+While researching this open source project we discovered the following security requirements while simulating the following misuse requirements
 **Functional Security Requirements**
 
 Follow up with Review OSS project documentation for alignment of security requirements with advertised features. Summarize your observations
