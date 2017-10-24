@@ -47,6 +47,16 @@ Like all dns services, it is exposed to denial of service. However, using the ap
 
 While researching this open source project we discovered the following security requirements while simulating the following mis-use requirements
 **Functional Security Requirements**
+**DNS request moitoring**
+The pi-hole system as a whole should have the ability to log all dns query attempts in a manner that allows the user to detect anomalous traffic. The interface for this
+should be user-friendly and intuitive to allow log analysis.
+**IP address blacklisting**
+The pi-hole system should provide user the ability to blacklist suspicious IP address source that are suspected to be carrying a Denial of service attack
+**Support for DNSSEC**
+DNSSEC is a mechanism that allow DNS request validation. Each DNS transactions is signed. It mitigates DNS cache poisoning that can be a form of Denial of Service.
+
+
+
 
 Follow up with Review OSS project documentation for alignment of security requirements with advertised features. Summarize your observations
 Feature 1 compared to advertised features
