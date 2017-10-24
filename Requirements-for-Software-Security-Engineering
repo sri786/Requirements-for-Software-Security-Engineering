@@ -13,14 +13,14 @@ Current assurance claims:
 Claim 1: Pi-hole **admin interface** has no exploitable HTTP weaknesses
 Claim 2: Pi-hole attack surface is minimized
 Claim 3: The Pi-hole standard input validation minimizes the possibility of device compromise
-Claim 4: Pi-Hole authentication mechanism is secure from brute force attacks
+Claim 4: Pi-Hole authentication mechanism minimizes the threat of unauthorized access
 Claim 5: Pi-hole DNS is adequately safe from denial of service attack
 
 Final Assurance claims
 Claim 1: The Pi-hole user interface has no exploitable HTTP weakness
 Claim 2: The Pi-hole software is designed to mimimize the attack surface of the system
 Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
-Claim 4:
+Claim 4: The Pi-Hole authentication mechanism is acceptably secure against the threat of unauthorized access
 Claim 5: The Pi-hole DNS server is adequately safe from denial of service attack
 
 
@@ -41,8 +41,8 @@ Claim 2: Pi-hole attack surface is minimized
 The attack surface of the Pi-hole software is minimized by utilizing best practices approaches to software development and community involvement.
 Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
 and some details about this claim are
-Claim 4: <  Will edit this>
-and some details about this claim are
+Claim 4: The Pi-Hole authentication mechanism is acceptably secure against the threat of unauthorized access.
+Some Details about this claim : Pi-Hole authentication mechanism implemented enough authentication practices and it is safe enough from the high level threat which is "unauthorized access".
 Claim 5: The Pi-hole DNS server is adequately safe from denial of service attacks**
 The Pi-hole system uses dnsmasq as the underlying dns server to provide ad filtering. It is lightweight and requires minimal resources.
 Like all dns services, it is exposed to denial of service. However, using the appropriate configuration it can be adequately secured.
@@ -55,9 +55,18 @@ Follow up with Review OSS project documentation for alignment of security requir
 Feature 1 compared to advertised features
 Feature 2 compared to advertised features
 Feature 3 compared to advertised features
-feature 4 compared to advertised features
-feature 5 compared to advertised features
+Feature 4 compared to advertised features
+  Following are the observations after going through the existing documentation of Pi-Hole regarding the authentication mechanism:
+    - Authentication: It does not have enough documentation regarding the authentication of users
+    - Password Policy : It does not have any details about the password policy for the user or admin 
+    - Acknoweldging the Strength of the Password : It does not have any details regarding how it measure the password strength
+Feature 5 compared to advertised features
 
 Follow up with Review OSS project documentation for security related configuration and installation issues. Summarize your observations.
-
+Feature 4
+    Following are the observations regarding the documentation of Installation and Configuration:
+    - Pi-Hole provides details of simple steps to be followed for the installation and required details are provided during the installation, which is great. 
+      However, there is no seperate documentation for the installation steps.
+    - Pi-Hole (command line / web-interface) does not have documentation on password expiration or account expiration.
+    - Pi-Hole does not have enough details about password retrieval or password change policy 
 Conclusion
