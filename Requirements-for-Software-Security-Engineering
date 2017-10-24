@@ -49,7 +49,7 @@ Like all dns services, it is exposed to denial of service. However, using the ap
 
 
 While researching this open source project we discovered the following security requirements while simulating the following misuse requirements.
-The first identified security requirements involved securing the Pi-hole software from general malicious threat actors. These threat actors are sometimes identified as script kiddies or unfocused threat actors who may or may not know the attack surface area. Pi-hole accomplishes this by limiting the amount of services identified outside of the networked environment.
+The first identified security requirements involved securing the Pi-hole software from general malicious threat actors. These threat actors are sometimes identified as script kiddies or unfocused threat actors who may or may not know the attack surface area. Pi-hole accomplishes this by limiting the amount of services identified outside of the networked environment. The Pi-hole software utilizes lighttpd as its web client which is marketed as a secure web platform by utilizing few resources outside of the application.
 
 Follow up with Review OSS project documentation for alignment of security requirements with advertised features. Summarize your observations
 Feature 1 compared to advertised features
