@@ -1,4 +1,7 @@
 ## Delete everything below this area before turn in!!
+
+## Don't forget to push your changes up
+
 Requirements for Software Security Engineering: 2-3 page report that describes the following:
 List of final assurance claims
 Describe the security requirements for the project captured using mis-use case diagrams. Include links to Lucidchart mis-use cases.
@@ -16,7 +19,7 @@ Claim 5: Pi-hole DNS is adequately safe from denial of service attack
 Final Assurance claims 
 Claim 1: The Pi-hole user interface has no exploitable HTTP weakness 
 Claim 2: The Pi-hole software is designed to mimimize the attack surface of the system
-Claim 3: 
+Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
 Claim 4:
 Claim 5: The Pi-hole DNS server is adequately safe from denial of service attack
 
@@ -36,7 +39,7 @@ Claim 1: The Pi-hole user interface has no exploitable HTTP weakness.
 The Pi-hole makes use of lighhtpd software package due to its minimal framework and the ease of which the system can be configured. 
 Claim 2: <Michael Will edit this>
 And some details about this claim is <Michael Will edit this>
-Claim 3: <  Will edit this>
+Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
 and some details about this claim are <  Will edit this>
 Claim 4: <  Will edit this>
 and some details about this claim are <  Will edit this>
