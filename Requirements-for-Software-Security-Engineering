@@ -38,12 +38,12 @@ Our group "R3tr0" focused on the software security aspect for the open source pr
 Claim 1: The Pi-hole user interface has no exploitable HTTP weakness.
 The Pi-hole makes use of lighhtpd software package due to its minimal framework and the ease of which the system can be configured.
 Claim 2: Pi-hole attack surface is minimized
-The attack surface of the Pi-hole software is minimized by utilizing best practices approaches to software development and community involvement. 
+The attack surface of the Pi-hole software is minimized by utilizing best practices approaches to software development and community involvement.
 Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
-and some details about this claim are <  Will edit this>
+and some details about this claim are
 Claim 4: <  Will edit this>
-and some details about this claim are <  Will edit this>
-**Claim 5: The Pi-hole DNS server is adequately safe from denial of service attacks**
+and some details about this claim are
+Claim 5: The Pi-hole DNS server is adequately safe from denial of service attacks**
 The Pi-hole system uses dnsmasq as the underlying dns server to provide ad filtering. It is lightweight and requires minimal resources.
 Like all dns services, it is exposed to denial of service. However, using the appropriate configuration it can be adequately secured.
 
