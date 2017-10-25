@@ -32,24 +32,26 @@ The Pi-hole system uses dnsmasq as the underlying dns server to provide ad filte
 Like all dns services, it is exposed to denial of service. However, using the appropriate configuration it can be adequately secured.
 </li>
 </ul>
+
 Security Requirements
 ---------------------
 The development of assurance cases for each and every assurance claim allowed us to develop misuse cases to address each assurance claim. The misuse cases as they relate to the assurance claims can be found on lucid chart located https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23. The development within these misuse cases allowed this team to develop the following security requirements.
-Web admin interface must have a username and password set up by default with no default credentials
-Web portal must be deployed with basic login authentication
-Pi-hole must utilize input validation
-Web portal must include account lockout policies
-Whitelist mist utilize ACL
-A user must be able to conduct a update of the software
-Configuration implements least privilege access
-Implements strong encryption from Pi-hole to user
-Logs all security information
-Disable user accounts with consecutive failed attempts
-Utilize encryption with storage
-Must include backup and recovery options
-Applies recent security patches to dependent packages
-Log all DNS query attempts
-
+<ul>
+<li>Web admin interface must have a username and password set up by default with no default credentials</li>
+<li>Web portal must be deployed with basic login authentication</li>
+<li>Pi-hole must utilize input validation</li>
+<li>Web portal must include account lockout policies</li>
+<li>Whitelist mist utilize ACL</li>
+<li>A user must be able to conduct a update of the software</li>
+<li>Configuration implements least privilege access</li>
+<li>Implements strong encryption from Pi-hole to user</li>
+<li>Logs all security information</li>
+<li>Disable user accounts with consecutive failed attempts</li>
+<li>Utilize encryption with storage</li>
+<li>Must include backup and recovery options</li>
+<li>Applies recent security patches to dependent packages</li>
+<li>Log all DNS query attempts</li>
+</ul>
 Open Source Project Pi-hole Documentation review
 ------------------------------------------------
 This project can be found at https://pi-hole.net
