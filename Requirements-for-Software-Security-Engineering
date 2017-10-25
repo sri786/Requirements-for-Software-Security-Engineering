@@ -10,14 +10,14 @@ Review OSS project documentation for security related configuration and installa
 
 
 Current assurance claims:
-Claim 1: Pi-hole **admin interface** has no exploitable HTTP weaknesses 
-Claim 2: Pi-hole attack surface is minimized  
-Claim 3: The Pi-hole standard input validation minimizes the possibility of device compromise 
+Claim 1: Pi-hole **admin interface** has no exploitable HTTP weaknesses
+Claim 2: Pi-hole attack surface is minimized
+Claim 3: The Pi-hole standard input validation minimizes the possibility of device compromise
 Claim 4: Pi-Hole authentication mechanism is secure from brute force attacks
-Claim 5: Pi-hole DNS is adequately safe from denial of service attack  
+Claim 5: Pi-hole DNS is adequately safe from denial of service attack
 
-Final Assurance claims 
-Claim 1: The Pi-hole user interface has no exploitable HTTP weakness 
+Final Assurance claims
+Claim 1: The Pi-hole user interface has no exploitable HTTP weakness
 Claim 2: The Pi-hole software is designed to mimimize the attack surface of the system
 Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
 Claim 4:
@@ -34,21 +34,23 @@ Carmel Waka
 Olivier Avande
 Srikanth Vadla
 
-Our group "R3tr0" focued on the software security aspect for the open source project called Pi-hole and have developed the following five assurance claims:
-Claim 1: The Pi-hole user interface has no exploitable HTTP weakness. 
-The Pi-hole makes use of lighhtpd software package due to its minimal framework and the ease of which the system can be configured. 
-Claim 2: <Michael Will edit this>
-And some details about this claim is <Michael Will edit this>
+Our group "R3tr0" focused on the software security aspect for the open source project called Pi-hole and have developed the following five assurance claims:
+Claim 1: The Pi-hole user interface has no exploitable HTTP weakness.
+The Pi-hole makes use of lighhtpd software package due to its minimal framework and the ease of which the system can be configured.
+Claim 2: Pi-hole attack surface is minimized
+The attack surface of the Pi-hole software is minimized by utilizing best practices approaches to software development and community involvement.
 Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
-and some details about this claim are <  Will edit this>
+and some details about this claim are
 Claim 4: <  Will edit this>
-and some details about this claim are <  Will edit this>
-**Claim 5: The Pi-hole DNS server is adequately safe from denial of service attacks**
+and some details about this claim are
+Claim 5: The Pi-hole DNS server is adequately safe from denial of service attacks**
 The Pi-hole system uses dnsmasq as the underlying dns server to provide ad filtering. It is lightweight and requires minimal resources.
 Like all dns services, it is exposed to denial of service. However, using the appropriate configuration it can be adequately secured.
 
 
-While researching this open source project we discovered the following security requirements while simulating the following mis-use requirements
+
+While researching this open source project we discovered the following security requirements while simulating the following misuse requirements.
+The first identified security requirements involved securing the Pi-hole software from general malicious threat actors. These threat actors are sometimes identified as script kiddies or unfocused threat actors who may or may not know the attack surface area. Pi-hole accomplishes this by limiting the amount of services identified outside of the networked environment. The Pi-hole software utilizes lighttpd as its web client which is marketed as a secure web platform by utilizing few resources outside of the application. 
 **Functional Security Requirements**
 **DNS request moitoring**
 The pi-hole system as a whole should have the ability to log all dns query attempts in a manner that allows the user to detect anomalous traffic. The interface for this
@@ -57,7 +59,6 @@ should be user-friendly and intuitive to allow log analysis.
 The pi-hole system should provide user the ability to blacklist suspicious IP address source that are suspected to be carrying a Denial of service attack
 **Support for DNSSEC**
 DNSSEC is a mechanism that allow DNS request validation. Each DNS transactions is signed. It mitigates DNS cache poisoning that can be a form of Denial of Service.
-
 
 
 
