@@ -63,12 +63,12 @@ The Pi-hole service is both a local DNS server and a web portal and the securing
 
 Reviewing the Pi-hole open source software project allows a user to see to type of community that this project attracts. The project has been a fan based project and is providing a service that fairly unique. For one the members of the Pi-hole community are united in the desire of blocking ads by utilizing a device connected to the users home network. The user of this software is more likely going to be somewhat familiar with basic networking concepts. The open source project is also focusing on low powered computers like a raspberry pi which allows the software to be deployed on multiple Linux distributions natively. With all of this combined the user base for this software appears to be more willing to contribute to both stability and feature development which appears to be the case with the amount of contributors to this project which is currently 76. These members are encouraged by the Pi-hole developers to communicate and desired features or requests.
 
+## Add a paragraph for section 3
+
+## Add a paragraph for section 4
+
+## Add a paragraph for section 5
 
 Open Source Project Pi-hole security installation and configuration
 --------------------------------------------------------------------
-Fill this out please
-
-
-
-Conclusion
-----------
+Reviewing the instillation procedures and how the security relates to this is quite to opposite as the initial instillation method given was to run a <curl> script which is "curl -sSL https://install.pi-hole.net | bash". Even the website states that piping this to bash is dangerous and encourages the user to review the code before running it but this will introduce a complacency for users who begin to trust the marketing name Pi-hole and land on a phishing portal mimicking the Pi-hole website and the user runs a malicious script within bash. Even today the website recommends new users run this curl script into bash. This complacency allows the products "good name" to be utilized by a phishing site and users who have utilized this instillation method in the past would not be concerned when asked to run this script once again. 
