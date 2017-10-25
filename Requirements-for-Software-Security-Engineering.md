@@ -71,7 +71,7 @@ Following are the observations after going through the existing documentation of
     <li>*Authentication*: It does not have enough documentation regarding the authentication of users</li>
     <li>*Password Policy*: It does not have any details about the password policy for the user or admin</li>
     <li>*Acknoweldging the Strength of the Password*: It does not have any details regarding how it measure the password strength</li>
-
+</ul>
 
 Open Source Project Pi-hole security installation and configuration
 --------------------------------------------------------------------
