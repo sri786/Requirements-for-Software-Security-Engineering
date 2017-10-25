@@ -67,9 +67,16 @@ Feature 3 compared to advertised features
 feature 4 compared to advertised features
 feature 5 compared to advertised features
 
-Follow up with Review OSS project documentation for security related configuration and installation issues. Summarize your observations.
+
+Open Source Project Pi-hole security installation and configuration
+--------------------------------------------------------------------
+Fill this out please
+
+
 
 Conclusion
+----------
+
 
 
 
