@@ -56,7 +56,7 @@ The development of assurance cases for each and every assurance claim allowed us
 
 Reviewing the security requirements of the open source project Pi-hole we reviewed the access control requirements and additionally identified the following security requirements:
 <ul>    
-<li>Implementing Access Control prevents unauthorized access: access control attempts to bypass securities measures implemented by the system. This can be seen here [Google](http://www.google.com)
+<li>Implementing Access Control prevents unauthorized access: access control attempts to bypass securities measures implemented by the system. This can be seen here link:google.com[google.com]
 </li>
 
 <li>Access control attacks involve stealing user credentials. Once successful, the attacker may launch impersonation attack by claiming as legitimate user. Implementing least privileges access may prevent unauthorized users to have access into the system
