@@ -65,10 +65,10 @@ Reviewing the Pi-hole open source software project allows a user to see to type 
 
 ## Add a paragraph for section 3
 
-Following are the observations after going through the existing documentation of Pi-Hole regarding the authentication mechanism:
-    - Authentication: It does not have enough documentation regarding the authentication of users
-    - Password Policy : It does not have any details about the password policy for the user or admin
-    - Acknoweldging the Strength of the Password : It does not have any details regarding how it measure the password strength
+Following are the observations after going through the existing documentation of Pi-Hole regarding the authentication mechanism:<ul>
+    <li>Authentication: It does not have enough documentation regarding the authentication of users</li>
+    <ul>Password Policy : It does not have any details about the password policy for the user or admin</ul>
+    <ul>Acknoweldging the Strength of the Password : It does not have any details regarding how it measure the password strength</ul>
 
 ## Add a paragraph for section 5
 
