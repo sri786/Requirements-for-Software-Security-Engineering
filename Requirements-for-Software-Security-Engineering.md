@@ -1,27 +1,37 @@
 Open Source Project:  Pi-hole
-Authors:              Michael Galde, Carmel Waka, Olivier Avande, Srikanth Vadla
-Team Name:            R3tr0
+Authors:  
+<ul>            
+<li>Michael Galde </li>
+<li>Carmel Waka </li>
+<li>Olivier Avande</li>
+<li>Srikanth Vadla</li>
+</ul>
+Team Name: R3tr0
+
 
 Our group "R3tr0" focused on the software security aspect for the open source project Pi-hole and have developed the following five assurance claims
 
+
 Assurance Claims
 -----------------
-Claim 1: The Pi-hole user interface has no exploitable HTTP weakness.
+<ul>
+<li>Claim 1: The Pi-hole user interface has no exploitable HTTP weakness.
 The Pi-hole makes use of lighhtpd software package due to its minimal framework and the ease of which the system can be configured.
-
-Claim 2: Pi-hole attack surface is minimized
+</li>
+<li>Claim 2: Pi-hole attack surface is minimized
 The attack surface of the Pi-hole software is minimized by utilizing best practices approaches to software development and community involvement.
-
-Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
+</li>
+<li>Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
 and some details about this claim are
-
-Claim 4: <  Will edit this>
+</li>
+<li>Claim 4: <  Will edit this>
 and some details about this claim are
-
-Claim 5: The Pi-hole DNS server is adequately safe from denial of service attacks**
+</li>
+<li>Claim 5: The Pi-hole DNS server is adequately safe from denial of service attacks**
 The Pi-hole system uses dnsmasq as the underlying dns server to provide ad filtering. It is lightweight and requires minimal resources.
 Like all dns services, it is exposed to denial of service. However, using the appropriate configuration it can be adequately secured.
-
+</li>
+</ul>
 Security Requirements
 ---------------------
 The development of assurance cases for each and every assurance claim allowed us to develop misuse cases to address each assurance claim. The misuse cases as they relate to the assurance claims can be found on lucid chart located https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23. The development within these misuse cases allowed this team to develop the following security requirements.
@@ -64,16 +74,16 @@ Conclusion
 
 
 
-  
-
-  
 
 
 
-  
 
 
-  
+
+
+
+
+
 
 
 
