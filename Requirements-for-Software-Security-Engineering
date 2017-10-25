@@ -26,16 +26,26 @@ Like all dns services, it is exposed to denial of service. However, using the ap
 ~Security Requirements~
 -----------------------
 
-While researching this open source project we discovered the following security requirements while simulating the following misuse requirements.
-The first identified security requirements involved securing the Pi-hole software from general malicious threat actors. These threat actors are sometimes identified as script kiddies or unfocused threat actors who may or may not know the attack surface area. Pi-hole accomplishes this by limiting the amount of services identified outside of the networked environment. The Pi-hole software utilizes lighttpd as its web client which is marketed as a secure web platform by utilizing few resources outside of the application.
-**Functional Security Requirements**
-**DNS request monitoring**
-The pi-hole system as a whole should have the ability to log all dns query attempts in a manner that allows the user to detect anomalous traffic. The interface for this
-should be user-friendly and intuitive to allow log analysis.
-**IP address blacklisting**
-The pi-hole system should provide user the ability to blacklist suspicious IP address source that are suspected to be carrying a Denial of service attack
-**Support for DNSSEC**
-DNSSEC is a mechanism that allow DNS request validation. Each DNS transactions is signed. It mitigates DNS cache poisoning that can be a form of Denial of Service.
+The development of assurance cases for each and every assurance claim allowed us to develop misuse cases to address each assurance claim. The misuse cases as they relate to the assurance claims can be found on lucid chart located https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23. The development within these misuse cases allowed this team to develop the following security requirements.
+Web admin interface must have a username and password set up by default with no default credentials
+Web portal must be deployed with basic login authentication
+Pi-hole must utilize input validation
+Web portal must include account lockout policies
+Whitelist mist utilize ACL
+A user must be able to conduct a update of the software
+Configuration implements least privilege access
+Implements strong encryption from Pi-hole to user
+Logs all security information
+Disable user accounts with consecutive failed attempts
+Utilize encryption with storage
+Must include backup and recovery options
+Applies recent security patches to dependent packages
+Log all DNS query attempts
+
+
+
+
+
 
 Follow up with Review OSS project documentation for alignment of security requirements with advertised features. Summarize your observations
 Feature 1 compared to advertised features
@@ -95,6 +105,30 @@ Claim 2: The Pi-hole software is designed to minimize the attack surface of the 
 Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
 Claim 4:
 Claim 5: The Pi-hole DNS server is adequately safe from denial of service attack
+
+
+
+
+
+
+Removed
+
+While researching this open source project we discovered the following security requirements while simulating the following misuse requirements.
+The first identified security requirements involved securing the Pi-hole software from general malicious threat actors. These threat actors are sometimes identified as script kiddies or unfocused threat actors who may or may not know the attack surface area. Pi-hole accomplishes this by limiting the amount of services identified outside of the networked environment. The Pi-hole software utilizes lighttpd as its web client which is marketed as a secure web platform by utilizing few resources outside of the application.
+**Functional Security Requirements**
+**DNS request monitoring**
+The pi-hole system as a whole should have the ability to log all dns query attempts in a manner that allows the user to detect anomalous traffic. The interface for this
+should be user-friendly and intuitive to allow log analysis.
+**IP address blacklisting**
+The pi-hole system should provide user the ability to blacklist suspicious IP address source that are suspected to be carrying a Denial of service attack
+**Support for DNSSEC**
+DNSSEC is a mechanism that allow DNS request validation. Each DNS transactions is signed. It mitigates DNS cache poisoning that can be a form of Denial of Service.
+
+
+
+
+
+
 
 
 ## Delete everything above this for final turn in
