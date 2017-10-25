@@ -1,4 +1,5 @@
 Open Source Project:  Pi-hole
+-----------------------------
 
 Authors:  
 <ul>            
