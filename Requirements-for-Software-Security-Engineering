@@ -5,26 +5,27 @@ Team Name:            R3tr0
 Our group "R3tr0" focused on the software security aspect for the open source project Pi-hole and have developed the following five assurance claims
 ~Assurance Claims~
 -------------------
-<ul>
-<li>Claim 1: The Pi-hole user interface has no exploitable HTTP weakness.
-<li>The Pi-hole makes use of lighhtpd software package due to its minimal framework and the ease of which the system can be configured.
 
-<li>Claim 2: Pi-hole attack surface is minimized
-<li>The attack surface of the Pi-hole software is minimized by utilizing best practices approaches to software development and community involvement.
+Claim 1: The Pi-hole user interface has no exploitable HTTP weakness.
+The Pi-hole makes use of lighhtpd software package due to its minimal framework and the ease of which the system can be configured.
 
-<li>Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
-<li>and some details about this claim are
+Claim 2: Pi-hole attack surface is minimized
+The attack surface of the Pi-hole software is minimized by utilizing best practices approaches to software development and community involvement.
 
-<li>Claim 4: <  Will edit this>
-<li>and some details about this claim are
+Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
+and some details about this claim are
 
-<li>Claim 5: The Pi-hole DNS server is adequately safe from denial of service attacks**
-<li>The Pi-hole system uses dnsmasq as the underlying dns server to provide ad filtering. It is lightweight and requires minimal resources.
-<li>Like all dns services, it is exposed to denial of service. However, using the appropriate configuration it can be adequately secured.
-</ul>
+Claim 4: <  Will edit this>
+and some details about this claim are
+
+Claim 5: The Pi-hole DNS server is adequately safe from denial of service attacks**
+The Pi-hole system uses dnsmasq as the underlying dns server to provide ad filtering. It is lightweight and requires minimal resources.
+Like all dns services, it is exposed to denial of service. However, using the appropriate configuration it can be adequately secured.
+
 
 ~Security Requirements~
 -----------------------
+
 While researching this open source project we discovered the following security requirements while simulating the following misuse requirements.
 The first identified security requirements involved securing the Pi-hole software from general malicious threat actors. These threat actors are sometimes identified as script kiddies or unfocused threat actors who may or may not know the attack surface area. Pi-hole accomplishes this by limiting the amount of services identified outside of the networked environment. The Pi-hole software utilizes lighttpd as its web client which is marketed as a secure web platform by utilizing few resources outside of the application.
 **Functional Security Requirements**
