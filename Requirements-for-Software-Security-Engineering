@@ -48,8 +48,19 @@ The Pi-hole system uses dnsmasq as the underlying dns server to provide ad filte
 Like all dns services, it is exposed to denial of service. However, using the appropriate configuration it can be adequately secured.
 
 
+
 While researching this open source project we discovered the following security requirements while simulating the following misuse requirements.
 The first identified security requirements involved securing the Pi-hole software from general malicious threat actors. These threat actors are sometimes identified as script kiddies or unfocused threat actors who may or may not know the attack surface area. Pi-hole accomplishes this by limiting the amount of services identified outside of the networked environment. The Pi-hole software utilizes lighttpd as its web client which is marketed as a secure web platform by utilizing few resources outside of the application. 
+**Functional Security Requirements**
+**DNS request moitoring**
+The pi-hole system as a whole should have the ability to log all dns query attempts in a manner that allows the user to detect anomalous traffic. The interface for this
+should be user-friendly and intuitive to allow log analysis.
+**IP address blacklisting**
+The pi-hole system should provide user the ability to blacklist suspicious IP address source that are suspected to be carrying a Denial of service attack
+**Support for DNSSEC**
+DNSSEC is a mechanism that allow DNS request validation. Each DNS transactions is signed. It mitigates DNS cache poisoning that can be a form of Denial of Service.
+
+
 
 Follow up with Review OSS project documentation for alignment of security requirements with advertised features. Summarize your observations
 Feature 1 compared to advertised features
