@@ -24,8 +24,8 @@ The attack surface of the Pi-hole software is minimized by utilizing best practi
 </li>
 <li>Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching. Patching is done in safe and secure environment requiring adminintrator privileges to minimize any related risks to updates.
 </li>
-<li>Claim 4: <  Will edit this>
-and some details about this claim are
+<li>Claim 4: The Pi-Hole authentication mechanism is acceptably secure against the threat of unauthorized access.
+Some Details about this claim : Pi-Hole authentication mechanism implemented enough authentication practices and it is safe enough from the high level threat which is "unauthorized access".
 </li>
 <li>Claim 5: The Pi-hole DNS server is adequately safe from denial of service attacks**
 The Pi-hole system uses dnsmasq as the underlying dns server to provide ad filtering. It is lightweight and requires minimal resources.
@@ -65,7 +65,10 @@ Reviewing the Pi-hole open source software project allows a user to see to type 
 
 ## Add a paragraph for section 3
 
-## Add a paragraph for section 4
+Following are the observations after going through the existing documentation of Pi-Hole regarding the authentication mechanism:
+    - Authentication: It does not have enough documentation regarding the authentication of users
+    - Password Policy : It does not have any details about the password policy for the user or admin
+    - Acknoweldging the Strength of the Password : It does not have any details regarding how it measure the password strength
 
 ## Add a paragraph for section 5
 
