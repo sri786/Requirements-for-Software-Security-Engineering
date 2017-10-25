@@ -51,6 +51,13 @@ The development of assurance cases for each and every assurance claim allowed us
 <li>Must include backup and recovery options</li>
 <li>Applies recent security patches to dependent packages</li>
 <li>Log all DNS query attempts</li>
+    
+<li>Implementing Access Control prevents unauthorized access: access control attempts to bypass securities measures implemented by the system. </li>
+<li>Access control attacks involve stealing user credentials. Once successful, the attacker may launch impersonation attack by claiming as legitimate user. Implementing least privileges access may prevent unauthorized users to have access into the system
+Account lockout to mitigate brute force attacks. </li>
+<li>Account lockout is a critical measure to overcome brute force attack. Brute force attack attempts to discover administrator’s password by trying possible combinations of letters, numbers, and symbols. Implementing account lockout after certain of attempts will strongly mitigate the attack.</li>
+<li>Input validation to mitigate dictionary attacks: input validation verifies that the value given by the user matches the expectation before any further processing. Input validation verifies different characters within field.
+Back up recovery prevents unauthorized alteration. Back up will prevent failures when updates are not successful. It will recover the device in certain point of time when failures occur.</li>
 </ul>
 
 Open Source Project Pi-hole Documentation review
