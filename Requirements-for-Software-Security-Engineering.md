@@ -61,12 +61,7 @@ This project can be found at https://pi-hole.net
 
 The Pi-hole service is both a local DNS server and a web portal and the securing of these various functions is key for consumers who wish to place the devices on there internal network. Comparing the first assurance claim which is that the Pi-hole has no exploitable HTTP weakness the group took a look at what features were utilized to enable this feature. The web interface was first established in version 2.1 as a default service. The Pi-hole team decided to utilize Lighttpd as the web service as it is advertised as a secure service. Lighttpd encourages its open source community to review its product and to recommend changes for stability and security. Pi-hole pushes out updates from Lighttpd and also encourages its community to review the Pi-hole platform as well. These two sources of review allow Pi-hole to provide a web portal service with a minimized attack surface.
 
-Follow up with Review OSS project documentation for alignment of security requirements with advertised features. Summarize your observations
-Feature 1 compared to advertised features
-Feature 2 compared to advertised features
-Feature 3 compared to advertised features
-feature 4 compared to advertised features
-feature 5 compared to advertised features
+Reviewing the Pi-hole open source software project allows a user to see to type of community that this project attracts. The project has been a fan based project and is providing a service that fairly unique. For one the members of the Pi-hole community are united in the desire of blocking ads by utilizing a device connected to the users home network. The user of this software is more likely going to be somewhat familiar with basic networking concepts. The open source project is also focusing on low powered computers like a raspberry pi which allows the software to be deployed on multiple Linux distributions natively. With all of this combined the user base for this software appears to be more willing to contribute to both stability and feature development which appears to be the case with the amount of contributors to this project which is currently 76. These members are encouraged by the Pi-hole developers to communicate and desired features or requests. 
 
 
 Open Source Project Pi-hole security installation and configuration
