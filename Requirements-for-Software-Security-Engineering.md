@@ -22,8 +22,7 @@ The Pi-hole makes use of lighhtpd software package due to its minimal framework 
 <li>Claim 2: Pi-hole attack surface is minimized
 The attack surface of the Pi-hole software is minimized by utilizing best practices approaches to software development and community involvement.
 </li>
-<li>Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching
-and some details about this claim are
+<li>Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching. Patching is done in safe and secure environment requiring adminintrator privileges to minimize any related risks to updates.
 </li>
 <li>Claim 4: <  Will edit this>
 and some details about this claim are
