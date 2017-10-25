@@ -1,5 +1,7 @@
 Open Source Project:  Pi-hole
+
 Authors:              Michael Galde, Carmel Waka, Olivier Avande, Srikanth Vadla
+
 Team Name:            R3tr0
 
 Our group "R3tr0" focused on the software security aspect for the open source project Pi-hole and have developed the following five assurance claims
