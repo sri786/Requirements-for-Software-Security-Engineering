@@ -52,8 +52,10 @@ The development of assurance cases for each and every assurance claim allowed us
 <li>Applies recent security patches to dependent packages</li>
 <li>Log all DNS query attempts</li>
 </ul>
+
 Open Source Project Pi-hole Documentation review
 ------------------------------------------------
+
 This project can be found at https://pi-hole.net
 
 The Pi-hole service is both a local DNS server and a web portal and the securing of these various functions is key for consumers who wish to place the devices on there internal network. Comparing the first assurance claim which is that the Pi-hole has no exploitable HTTP weakness the group took a look at what features were utilized to enable this feature. The web interface was first established in version 2.1 as a default service. The Pi-hole team decided to utilize Lighttpd as the web service as it is advertised as a secure service. Lighttpd encourages its open source community to review its product and to recommend changes for stability and security. Pi-hole pushes out updates from Lighttpd and also encourages its community to review the Pi-hole platform as well. These two sources of review allow Pi-hole to provide a web portal service with a minimized attack surface.
