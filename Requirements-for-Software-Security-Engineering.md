@@ -80,7 +80,3 @@ Reviewing the instillation procedures and how the security relates to this is qu
 The configuration of the Pi-hole software utilizes shell script which is very human readable based on the configuration files. This makes it easier for users with limited coding backgrounds to review settings and configurations within each file associated with the Pi-hole software. The ad blocking domains for example are simply HOST file locations and the user can include the location of any HOST file they choose. Alternatively the user can create there own HOSTS file based on the users own traffic by utilizing the web portal to the software. The application of easy review of the configuration files and of the creation of HOSTS files makes the user have adequate control to administer the system and to conduct a user level audit with a limited coding background. This simple feature allows users of all backgrounds to develop a trust of this open source software and allows the user to be aware of how it operates.
 
 ## Add another security installation and configuration observation
-
-## Add another security installation and configuration observation
-
-## Add another security installation and configuration observation
