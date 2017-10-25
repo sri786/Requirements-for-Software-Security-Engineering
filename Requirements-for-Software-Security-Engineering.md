@@ -56,13 +56,13 @@ The development of assurance cases for each and every assurance claim allowed us
 
 Reviewing the security requirements of the open source project Pi-hole we reviewed the access control requirements and additionally identified the following security requirements:
 <ul>    
-<li>Implementing Access Control prevents unauthorized access: access control attempts to bypass securities measures implemented by the system. This can be seen here [Lucid Chart](https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23)</li>
+<li>Implementing Access Control prevents unauthorized access: access control attempts to bypass securities measures implemented by the system. This can be seen here [[Lucid Chart](https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23)]</li>
 
 <li>Access control attacks involve stealing user credentials. Once successful, the attacker may launch impersonation attack by claiming as legitimate user. Implementing least privileges access may prevent unauthorized users to have access into the system
-Account lockout to mitigate brute force attacks. This can be seen here [Lucid Chart](https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23)</li>
-<li>Account lockout is a critical measure to overcome brute force attack. Brute force attack attempts to discover administrator’s password by trying possible combinations of letters, numbers, and symbols. Implementing account lockout after certain of attempts will strongly mitigate the attack. This can be seen here [Lucid Chart](https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23)</li>
+Account lockout to mitigate brute force attacks. This can be seen here [[Lucid Chart](https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23)]</li>
+<li>Account lockout is a critical measure to overcome brute force attack. Brute force attack attempts to discover administrator’s password by trying possible combinations of letters, numbers, and symbols. Implementing account lockout after certain of attempts will strongly mitigate the attack. This can be seen here [[Lucid Chart](https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23)]</li>
 <li>Input validation to mitigate dictionary attacks: input validation verifies that the value given by the user matches the expectation before any further processing. Input validation verifies different characters within field.
-Back up recovery prevents unauthorized alteration. Back up will prevent failures when updates are not successful. It will recover the device in certain point of time when failures occur. This can be seen here [Lucid Chart](https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23)</li>
+Back up recovery prevents unauthorized alteration. Back up will prevent failures when updates are not successful. It will recover the device in certain point of time when failures occur. This can be seen here [[Lucid Chart](https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23)]</li>
 </ul>
 
 Open Source Project Pi-hole Documentation review
