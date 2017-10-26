@@ -41,14 +41,15 @@ The development of assurance cases for each and every assurance claim allowed us
 <li>Web portal must be deployed with basic login authentication</li>
 <li>Pi-hole must utilize input validation</li>
 <li>Web portal must include account lockout policies</li>
+<li>Web portal / Command based utility must enforce secure password policies</li>
 <li>Whitelist mist utilize ACL</li>
 <li>A user must be able to conduct a update of the software</li>
 <li>Configuration implements least privilege access</li>
 <li>Implements strong encryption from Pi-hole to user</li>
 <li>Logs all security information</li>
-<li>Disable user accounts with consecutive failed attempts</li>
+<li>Disable user accounts on consecutive failed attempts</li>
 <li>Utilize encryption with storage</li>
-<li>Must include backup and recovery options</li>
+<li>Must include backup and recovery options for crucial files (example : password file)</li>
 <li>Applies recent security patches to dependent packages</li>
 <li>Log all DNS query attempts</li>
 </ul>
@@ -82,7 +83,8 @@ To provide DNS service, Pi-hole uses dnsmasq present in most linux distros. All 
 
 Following are the observations after going through the existing documentation of Pi-Hole regarding the authentication mechanism:<ul>
     <li>*Authentication*: It does not have enough documentation regarding the authentication of users</li>
-    <li>*Password Policy*: It does not have any details about the password policy for the user or admin</li>
+    <li>*Password Policy*: It does not have any details about the new password policy for the users</li>
+    <li>*Account lock / Password Reset*: It does not have much details about password reset policy and account lock conditions</li>
     <li>*Acknoweldging the Strength of the Password*: It does not have any details regarding how it measure the password strength</li>
 </ul>
 
@@ -91,3 +93,6 @@ Open Source Project Pi-hole security installation and configuration
 Reviewing the installation procedures and how the security relates to this is quite the opposite as the initial installation method given was to run a <curl> script which is "curl -sSL https://install.pi-hole.net | bash". Even the website states that piping this to bash is dangerous and encourages the user to review the code before running it but this will introduce a complacency for users who begin to trust the marketing name Pi-hole and land on a phishing portal mimicking the Pi-hole website and the user runs a malicious script within bash. Even today the website recommends new users run this curl script into bash. This complacency allows the products "good name" to be utilized by a phishing site and users who have utilized this instillation method in the past would not be concerned when asked to run this script once again.
 
 The configuration of the Pi-hole software utilizes shell script which is very human readable based on the configuration files. This makes it easier for users with limited coding backgrounds to review settings and configurations within each file associated with the Pi-hole software. The ad blocking domains for example are simply HOST file locations and the user can include the location of any HOST file they choose. Alternatively the user can create there own HOSTS file based on the users own traffic by utilizing the web portal to the software. The application of easy review of the configuration files and of the creation of HOSTS files makes the user have adequate control to administer the system and to conduct a user level audit with a limited coding background. This simple feature allows users of all backgrounds to develop a trust of this open source software and allows the user to be aware of how it operates.
+
+Following are the observations regarding the documentation of Installation and Configuration:
+Pi-Hole provides details of simple steps to be followed for the installation and required details are provided during the installation, which is great.However, there is no seperate documentation for the installation steps.
