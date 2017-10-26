@@ -16,46 +16,45 @@ Our group "R3tr0" focused on the software security aspect for the open source pr
 Assurance Claims
 -----------------
 <ul>
-<li>Claim 1: The Pi-hole user interface has no exploitable HTTP weakness.
-The Pi-hole makes use of lighhtpd software package due to its minimal framework and the ease of which the system can be configured.
+    <li><b>Claim 1: The Pi-hole user interface has no exploitable HTTP weakness.</b></br>The Pi-hole makes use of lighhtpd software package due to its minimal framework and the ease of which the system can be configured.
 </li>
-<li>Claim 2: Pi-hole attack surface is minimized
-The attack surface of the Pi-hole software is minimized by utilizing best practices approaches to software development and community involvement.
+<li><b>Claim 2: Pi-hole attack surface is minimized.</b></br>The attack surface of the Pi-hole software is minimized by utilizing best practices approaches to software development and community involvement.
 </li>
-<li>Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching. Patching is done in safe and secure environment requiring administrator privileges to minimize any related risks to updates.
+<li><b>Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching.</b></br>Patching is done in safe and secure environment requiring administrator privileges to minimize any related risks to updates.
 </li>
-<li>Claim 4: The Pi-Hole authentication mechanism is acceptably secure against the threat of unauthorized access.
-Some Details about this claim : Pi-Hole authentication mechanism implemented enough authentication practices and it is safe enough from the high level threat which is "unauthorized access".
+<li><b>Claim 4: The Pi-Hole authentication mechanism is acceptably secure against the threat of unauthorized access.</b></br>Pi-Hole authentication mechanism implemented enough authentication practices and it is safe enough from the high level threat which is "unauthorized access".
 </li>
-<li>Claim 5: The Pi-hole DNS server is adequately safe from denial of service attacks
-The Pi-hole system uses dnsmasq as the underlying dns server to provide ad filtering. It is lightweight and requires minimal resources.
+<li><b>Claim 5: The Pi-hole DNS server is adequately safe from denial of service attacks.</b></br>The Pi-hole system uses dnsmasq as the underlying dns server to provide ad filtering. It is lightweight and requires minimal resources.
 Like all dns services, it is exposed to denial of service. However, using the appropriate configuration it can be adequately secured.
 </li>
 </ul>
 
 Security Requirements
 ---------------------
-The development of assurance cases for each and every assurance claim allowed us to develop misuse cases to address each assurance claim. The misuse cases as they relate to the assurance claims can be found on lucidchart located https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23. The development within these misuse cases allowed this team to develop the following security requirements.
+The development of assurance cases for each and every assurance claim allowed us to develop misuse cases to address each assurance claim. The misuse cases as they relate to the assurance claims can be found on lucidchart located https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23. The development within these misuse cases allowed this team to develop the following categorized security requirements .
+
 <ul>
-<li>Web admin interface must have a username and password set up by default with no default credentials</li>
+<li><b>Confidentiality</b></li>
 <li>Web portal must be deployed with basic login authentication</li>
-<li>Pi-hole must utilize input validation</li>
 <li>Web portal must include account lockout policies</li>
-<li>Web portal / Command based utility must enforce secure password policies</li>
-<li>Whitelist mist utilize ACL</li>
-<li>A user must be able to conduct a update of the software</li>
-<li>Configuration implements least privilege access</li>
-<li>Implements strong encryption from Pi-hole to user</li>
-<li>Logs all security information</li>
 <li>Disable user accounts on consecutive failed attempts</li>
-<li>Utilize encryption with storage</li>
+<li>Implement strong encryption method in authentication module</li>
+<li>Web portal / command based utility must enforce secure password policies</li>
+</br>    
+<li><b>Integrity</b></li>
+<li>Web admin interface must have a username and password set up by default with no default credentials</li>
+<li>Whitelisting must utilize ACL</li>
+<li>Pi-Hole should implement least privilege access</li>
+</br>
+<li><b><u>Availability</b></u></li>
+<li>System should save all the security logs</li>
+<li>Log all DNS query attempts</li>
 <li>Must include backup and recovery options for crucial files (example : password file)</li>
 <li>Applies recent security patches to dependent packages</li>
-<li>Log all DNS query attempts</li>
+<li>A user must be able to conduct future updates of the software</li>
 </ul>
-
-
-Reviewing the security requirements of the open source project Pi-hole we reviewed the access control requirements and additionally identified the following security requirements:
+</br>
+Reviewing the security requirements of the open source project Pi-hole, we reviewed the access control requirements and additionally identified the following security requirements:
 <ul>    
 <li>Implementing Access Control prevents unauthorized access: access control attempts to bypass securities measures implemented by the system. This can be seen here https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23
 </li>
@@ -65,8 +64,8 @@ Account lockout to mitigate brute force attacks. This can be seen here https://w
 </li>
 <li>Account lockout is a critical measure to overcome brute force attack. Brute force attack attempts to discover administrator’s password by trying possible combinations of letters, numbers, and symbols. Implementing account lockout after certain of attempts will strongly mitigate the attack. This can be seen here https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23
 </li>
-<li>Input validation to mitigate dictionary attacks: input validation verifies that the value given by the user matches the expectation before any further processing. Input validation verifies different characters within field.
-Back up recovery prevents unauthorized alteration. Back up will prevent failures when updates are not successful. It will recover the device in certain point of time when failures occur. This can be seen here https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23
+<li>Input validation to mitigate dictionary attacks: Input validation verifies that the value given by the user matches the expectation before any further processing. Input validation verifies different characters within field.
+Back up recovery prevents unauthorized alteration. Back up will prevent failures when updates are not successful. It will recover the device in certain point of time when failures occur.This can be seen here https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23
 </li>
 </ul>
 
@@ -82,10 +81,10 @@ Reviewing the Pi-hole open source software project allows a user to see to type 
 To provide DNS service, Pi-hole uses dnsmasq present in most linux distros. All queries are also saved to a log file (/var/log/pihole.log) and are presented to the user through the web interface in an organized fashion. This could allow an experienced user to detect anomalous queries and take action.
 
 Following are the observations after going through the existing documentation of Pi-Hole regarding the authentication mechanism:<ul>
-    <li>*Authentication*: It does not have enough documentation regarding the authentication of users</li>
-    <li>*Password Policy*: It does not have any details about the new password policy for the users</li>
-    <li>*Account lock / Password Reset*: It does not have much details about password reset policy and account lock conditions</li>
-    <li>*Acknowledging the Strength of the Password*: It does not have any details regarding how it measure the password strength</li>
+   <li>Authentication: It does not have enough documentation regarding the authentication of users</li>
+   <li>Password Policy: It does not have any details about the new password policy for the users</li>
+   <li>Account lock / Password Reset: It does not have much details about password reset policy and account lock conditions</li>
+   <li>Acknowledging the Strength of the Password: It does not have any details regarding how it measure the password strength</li>
 </ul>
 
 Open Source Project Pi-hole security installation and configuration
