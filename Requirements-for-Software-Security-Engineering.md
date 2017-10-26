@@ -16,15 +16,15 @@ Our group "R3tr0" focused on the software security aspect for the open source pr
 Assurance Claims
 -----------------
 <ul>
-    <li><b>Claim 1: The Pi-hole user interface has no exploitable HTTP weakness.</b></br>The Pi-hole makes use of lighhtpd software package due to its minimal framework and the ease of which the system can be configured.
+    <li><b>Claim 1: The Pi-Hole user interface has no exploitable HTTP weakness.</b></br>The Pi-hole makes use of lighhtpd software package due to its minimal framework and the ease of which the system can be configured.
 </li>
-<li><b>Claim 2: Pi-hole attack surface is minimized.</b></br>The attack surface of the Pi-hole software is minimized by utilizing best practices approaches to software development and community involvement.
+<li><b>Claim 2: Pi-Hole attack surface is minimized.</b></br>The attack surface of the Pi-hole software is minimized by utilizing best practices approaches to software development and community involvement.
 </li>
 <li><b>Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching.</b></br>Patching is done in safe and secure environment requiring administrator privileges to minimize any related risks to updates.
 </li>
 <li><b>Claim 4: The Pi-Hole authentication mechanism is acceptably secure against the threat of unauthorized access.</b></br>Pi-Hole authentication mechanism implemented enough authentication practices and it is safe enough from the high level threat which is "unauthorized access".
 </li>
-<li><b>Claim 5: The Pi-hole DNS server is adequately safe from denial of service attacks.</b></br>The Pi-hole system uses dnsmasq as the underlying dns server to provide ad filtering. It is lightweight and requires minimal resources.
+<li><b>Claim 5: The Pi-Hole DNS server is adequately safe from denial of service attacks.</b></br>The Pi-hole system uses dnsmasq as the underlying dns server to provide ad filtering. It is lightweight and requires minimal resources.
 Like all dns services, it is exposed to denial of service. However, using the appropriate configuration it can be adequately secured.
 </li>
 </ul>
@@ -33,20 +33,22 @@ Security Requirements
 ---------------------
 The development of assurance cases for each and every assurance claim allowed us to develop misuse cases to address each assurance claim. The misuse cases as they relate to the assurance claims can be found on lucidchart located https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23. The development within these misuse cases allowed this team to develop the following categorized security requirements .
 
+<h4><b>Confidentiality</b></h4>
 <ul>
-<li><b>Confidentiality</b></li>
 <li>Web portal must be deployed with basic login authentication</li>
 <li>Web portal must include account lockout policies</li>
 <li>Disable user accounts on consecutive failed attempts</li>
 <li>Implement strong encryption method in authentication module</li>
 <li>Web portal / command based utility must enforce secure password policies</li>
-</br>    
-<li><b>Integrity</b></li>
-<li>Web admin interface must have a username and password set up by default with no default credentials</li>
+</ul> 
+<h4><b>Integrity</b></h4>
+<ul>
+<li>Web portal (admin interface) must have a username and password set up by default with no default credentials</li>
 <li>Whitelisting must utilize ACL</li>
 <li>Pi-Hole should implement least privilege access</li>
-</br>
-<li><b><u>Availability</b></u></li>
+</ul>
+<h4><b><u>Availability</b></h4>
+<ul>
 <li>System should save all the security logs</li>
 <li>Log all DNS query attempts</li>
 <li>Must include backup and recovery options for crucial files (example : password file)</li>
@@ -54,7 +56,7 @@ The development of assurance cases for each and every assurance claim allowed us
 <li>A user must be able to conduct future updates of the software</li>
 </ul>
 </br>
-Reviewing the security requirements of the open source project Pi-hole, we reviewed the access control requirements and additionally identified the following security requirements:
+Reviewing the security requirements of the open source project Pi-Hole, following are the required additional security requirements related to the authentication and access control :
 <ul>    
 <li>Implementing Access Control prevents unauthorized access: access control attempts to bypass securities measures implemented by the system. This can be seen here https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23
 </li>
