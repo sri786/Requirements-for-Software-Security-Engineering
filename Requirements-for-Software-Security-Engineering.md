@@ -22,7 +22,7 @@ The Pi-hole makes use of lighhtpd software package due to its minimal framework 
 <li>Claim 2: Pi-hole attack surface is minimized
 The attack surface of the Pi-hole software is minimized by utilizing best practices approaches to software development and community involvement.
 </li>
-<li>Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching. Patching is done in safe and secure environment requiring adminintrator privileges to minimize any related risks to updates.
+<li>Claim 3: The Pi-Hole minimizes the possibility of device compromised during patching. Patching is done in safe and secure environment requiring administrator privileges to minimize any related risks to updates.
 </li>
 <li>Claim 4: The Pi-Hole authentication mechanism is acceptably secure against the threat of unauthorized access.
 Some Details about this claim : Pi-Hole authentication mechanism implemented enough authentication practices and it is safe enough from the high level threat which is "unauthorized access".
@@ -85,7 +85,7 @@ Following are the observations after going through the existing documentation of
     <li>*Authentication*: It does not have enough documentation regarding the authentication of users</li>
     <li>*Password Policy*: It does not have any details about the new password policy for the users</li>
     <li>*Account lock / Password Reset*: It does not have much details about password reset policy and account lock conditions</li>
-    <li>*Acknoweldging the Strength of the Password*: It does not have any details regarding how it measure the password strength</li>
+    <li>*Acknowledging the Strength of the Password*: It does not have any details regarding how it measure the password strength</li>
 </ul>
 
 Open Source Project Pi-hole security installation and configuration
@@ -95,4 +95,4 @@ Reviewing the installation procedures and how the security relates to this is qu
 The configuration of the Pi-hole software utilizes shell script which is very human readable based on the configuration files. This makes it easier for users with limited coding backgrounds to review settings and configurations within each file associated with the Pi-hole software. The ad blocking domains for example are simply HOST file locations and the user can include the location of any HOST file they choose. Alternatively the user can create there own HOSTS file based on the users own traffic by utilizing the web portal to the software. The application of easy review of the configuration files and of the creation of HOSTS files makes the user have adequate control to administer the system and to conduct a user level audit with a limited coding background. This simple feature allows users of all backgrounds to develop a trust of this open source software and allows the user to be aware of how it operates.
 
 Following are the observations regarding the documentation of Installation and Configuration:
-Pi-Hole provides details of simple steps to be followed for the installation and required details are provided during the installation, which is great.However, there is no seperate documentation for the installation steps.
+Pi-Hole provides details of simple steps to be followed for the installation and required details are provided during the installation, which is great. However, there is no separate documentation for the installation steps.
