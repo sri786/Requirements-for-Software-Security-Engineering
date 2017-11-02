@@ -8,6 +8,7 @@ Validate the diagram for any obvious structural deficiencies
 
 
 Analyze the Level 1 diagram to identify the applicable STRIDE threats
+---------------------------------------------------------------------
 Examine each threat automatically identified
 Document mitigation strategies for the identified threats
 Pay special attention for elements that interact across threat boundaries
@@ -17,6 +18,7 @@ Review OSS project actual software design for security related issues based on y
 
 
 Grading criteria
+----------------
 Use of proper notations
 DFD notation
 Threat Model Quality
@@ -28,4 +30,5 @@ Quality of analysis to mitigate threats
 
 
 Due Date
+--------
 Wednesday November 8th, 2017
