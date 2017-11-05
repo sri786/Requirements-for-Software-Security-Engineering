@@ -6,15 +6,6 @@ Current threat model
 <p align="center">
 <img src="https://user-images.githubusercontent.com/30883926/32418624-24d1885c-c233-11e7-9a2f-fc308bb050e2.jpg">
 </p>
-
-
-
-	 <!DOCTYPE html>
-<html lang="en-US" xmlns="http://www.w3.org/TR/xhtml1/strict"><head><title>Threat Modeling Report</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><style type="text/css">
-          body {
-          font-family: "Segoe UI Light", "Helvetica", "sans-serif";
-          }
-
           img {
           padding:1px;
           border:1px solid #021a40;
