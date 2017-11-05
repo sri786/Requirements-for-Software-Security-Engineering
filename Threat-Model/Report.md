@@ -9,15 +9,15 @@ Current threat model
 
 <body><h1 class="title" tabindex="0">Threat Modeling Report</h1><span tabindex="0">
           
-Created on 11/5/2017 2:17:13 PM</span><p tabindex="0"><strong>Threat Model Name: </strong></p><p tabindex="0"><strong>Owner: </strong></p>
+Created on 11/5/2017 2:17:13 PM</span><p tabindex="0"><strong>Threat Model Name: Pi-Hole Threat Model</strong></p><p tabindex="0"><strong>Owner: R3tr0 </strong></p>
 
-<p tabindex="0"><strong>Reviewer: </strong></p><p tabindex="0"><strong>Contributors: </strong></p>
+<p tabindex="0"><strong>Reviewer: Michael Galde</strong></p><p tabindex="0"><strong>Contributors: </strong></p>
 
-<p tabindex="0"><strong>Description: </strong></p>
+<p tabindex="0"><strong>Description: A review of the Pi-hole threat model</strong></p>
 
-<p tabindex="0"><strong>Assumptions: </strong></p>
+<p tabindex="0"><strong>Assumptions: Assumed that the Pi-hole is a clean install</strong></p>
 
-<p tabindex="0"><strong>External Dependencies: </strong></p>
+<p tabindex="0"><strong>External Dependencies: Raspberry Pi</strong></p>
 
 <br /><h3 tabindex="0">Threat Model Summary:</h3><table><tr tabindex="0" role="row">
           
