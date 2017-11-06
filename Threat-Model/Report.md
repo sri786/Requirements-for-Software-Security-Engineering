@@ -7,7 +7,7 @@ Current threat model
 <img src="https://user-images.githubusercontent.com/30883926/32418624-24d1885c-c233-11e7-9a2f-fc308bb050e2.jpg">
 </p>
 
-
+#Start of Report
 
 <body><h1 class="title" tabindex="0">Threat Modeling Report</h1><span tabindex="0">
           Created on 11/5/2017 2:17:13 PM</span><p tabindex="0"><strong>Threat Model Name: </strong></p><p tabindex="0"><strong>Owner: </strong></p><p tabindex="0"><strong>Reviewer: </strong></p><p tabindex="0"><strong>Contributors: </strong></p><p tabindex="0"><strong>Description: </strong></p><p tabindex="0"><strong>Assumptions: </strong></p><p tabindex="0"><strong>External Dependencies: </strong></p><br /><h3 tabindex="0">Threat Model Summary:</h3><table><tr tabindex="0" role="row"><td>Not Started</td><td>35</td></tr><tr tabindex="0" role="row"><td>Not Applicable</td><td>0</td></tr><tr tabindex="0" role="row"><td>Needs Investigation</td><td>0</td></tr><tr tabindex="0" role="row"><td>Mitigation Implemented</td><td>0</td></tr><tr tabindex="0" role="row"><td>Total</td><td>35</td></tr><tr tabindex="0" role="row"><td>Total Migrated</td><td>0</td></tr></table><p class="bugtrack" /><hr /><h2 tabindex="0">
