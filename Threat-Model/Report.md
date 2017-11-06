@@ -8,7 +8,7 @@ R3tr0 analyzed this diagram and by utilizing the STRIDE model we have identified
 Spoofing
 --------
 
-**1.** Spoofing of Source Data Store Blacklist  [State: Not Started]  [Priority: High] 
+**1.** Spoofing of Source Data Store Blacklist  
 
 *Category:*	Spoofing
 
@@ -16,7 +16,7 @@ Description:	Blacklist may be spoofed by an attacker and this may lead to incorr
 
 Justification:	<no mitigation provided>
 
-**7.** Spoofing of Destination Data Store Blacklist  [State: Not Started]  [Priority: High] 
+**7.** Spoofing of Destination Data Store Blacklist
 
 *Category:*	Spoofing
 
@@ -24,7 +24,7 @@ Description:	Blacklist may be spoofed by an attacker and this may lead to data b
 
 Justification:	<no mitigation provided>
 
-**8.** Spoofing of Destination Data Store Whitelist   [State: Not Started]  [Priority: High] 
+**8.** Spoofing of Destination Data Store Whitelist
 
 *Category:*          Spoofing
 
@@ -32,7 +32,7 @@ Description:	Whitelist  may be spoofed by an attacker and this may lead to data 
 
 Justification:	<no mitigation provided>
 
-**10.** Spoofing of Destination Data Store DNS log  [State: Not Started]  [Priority: High] 
+**10.** Spoofing of Destination Data Store DNS log
 
 *Category:*	Spoofing
 
@@ -40,7 +40,7 @@ Description:	DNS log may be spoofed by an attacker and this may lead to data bei
 
 Justification:	<no mitigation provided>
 
-**15.** Spoofing the User External Entity  [State: Not Started]  [Priority: High] 
+**15.** Spoofing the User External Entity 
 
 Category:	Spoofing
 
@@ -48,7 +48,7 @@ Description:	User may be spoofed by an attacker and this may lead to unauthorize
 
 Justification:	<no mitigation provided>
 
-**17.** Spoofing the Pi-hole Process  [State: Not Started]  [Priority: High] 
+**17.** Spoofing the Pi-hole Process  
 
 Category:	Spoofing
 
@@ -56,7 +56,7 @@ Description:	Pi-hole may be spoofed by an attacker and this may lead to informat
 
 Justification:	<no mitigation provided>
 
-**27.** Spoofing of Source Data Store DNS log  [State: Not Started]  [Priority: High] 
+**27.** Spoofing of Source Data Store DNS log 
 
 Category:	Spoofing
 
@@ -64,7 +64,7 @@ Description:	DNS log may be spoofed by an attacker and this may lead to incorrec
 
 Justification:	<no mitigation provided>
 
-**28.** Spoofing of the User External Destination Entity  [State: Not Started]  [Priority: High] 
+**28.** Spoofing of the User External Destination Entity 
 
 Category:	Spoofing
 
@@ -72,7 +72,7 @@ Description:	User may be spoofed by an attacker and this may lead to data being 
 
 Justification:	<no mitigation provided>
 
-**31.** Spoofing of Source Data Store Whitelist   [State: Not Started]  [Priority: High] 
+**31.** Spoofing of Source Data Store Whitelist  
 
 Category:	Spoofing
 
@@ -84,7 +84,7 @@ Justification:	<no mitigation provided>
 Tampering
 ---------
 
-**11.** The DNS log Data Store Could Be Corrupted  [State: Not Started]  [Priority: High] 
+**11.** The DNS log Data Store Could Be Corrupted 
 
 Category:	Tampering
 
@@ -92,7 +92,7 @@ Description:	Data flowing across DNS Query may be tampered with by an attacker. 
 
 Justification:	<no mitigation provided>
 
-**18.** Potential Lack of Input Validation for Pi-hole  [State: Not Started]  [Priority: High] 
+**18.** Potential Lack of Input Validation for Pi-hole  
 
 Category:	Tampering
 
@@ -103,7 +103,7 @@ Justification:	<no mitigation provided>
 Repudiation
 -----------
 
-**3.** External Entity Network Traffic Result Potentially Denies Receiving Data  [State: Not Started]  [Priority: High] 
+**3.** External Entity Network Traffic Result Potentially Denies Receiving Data 
 
 Category:	Repudiation
 
@@ -111,7 +111,7 @@ Description:	Network Traffic Result claims that it did not receive data from a p
 
 Justification:	<no mitigation provided>
 
-**12.** Data Store Denies DNS log Potentially Writing Data  [State: Not Started]  [Priority: High] 
+**12.** Data Store Denies DNS log Potentially Writing Data  
 
 Category:	Repudiation
 
@@ -119,7 +119,7 @@ Description:	DNS log claims that it did not write data received from an entity o
 
 Justification:	<no mitigation provided>
 
-**19.** Potential Data Repudiation by Pi-hole  [State: Not Started]  [Priority: High] 
+**19.** Potential Data Repudiation by Pi-hole  
 
 Category:	Repudiation
 
@@ -127,7 +127,7 @@ Description:	Pi-hole claims that it did not receive data from a source outside t
 
 Justification:	<no mitigation provided>
 
-**29.** External Entity User Potentially Denies Receiving Data  [State: Not Started]  [Priority: High] 
+**29.** External Entity User Potentially Denies Receiving Data  
 
 Category:	Repudiation
 
@@ -135,7 +135,7 @@ Description:	User claims that it did not receive data from a process on the othe
 
 Justification:	<no mitigation provided>
 
-**33.** External Entity Network Traffic Result Potentially Denies Receiving Data  [State: Not Started]  [Priority: High] 
+**33.** External Entity Network Traffic Result Potentially Denies Receiving Data  
 
 Category:	Repudiation
 
@@ -146,7 +146,7 @@ Justification:	<no mitigation provided>
 Information Disclosure
 -----------------------
 
-**2.** Weak Access Control for a Resource  [State: Not Started]  [Priority: High] 
+**2.** Weak Access Control for a Resource  
 
 Category:	Information Disclosure
 
@@ -154,7 +154,7 @@ Description:	Improper data protection of Blacklist can allow an attacker to read
 
 Justification:	<no mitigation provided>
 
-**20.** Data Flow Sniffing  [State: Not Started]  [Priority: High] 
+**20.** Data Flow Sniffing  
 
 Category:	Information Disclosure
 
@@ -162,7 +162,7 @@ Description:	Data flowing across Input Data Flow may be sniffed by an attacker. 
 
 Justification:	<no mitigation provided>
 
-**26.** Weak Access Control for a Resource  [State: Not Started]  [Priority: High] 
+**26.** Weak Access Control for a Resource  
 
 Category:	Information Disclosure
 
@@ -170,7 +170,7 @@ Description:	Improper data protection of DNS log can allow an attacker to read i
 
 Justification:	<no mitigation provided>
 
-**32.** Weak Access Control for a Resource  [State: Not Started]  [Priority: High] 
+**32.** Weak Access Control for a Resource  
 
 Category:	Information Disclosure
 
@@ -181,7 +181,7 @@ Justification:	<no mitigation provided>
 Denial of Service
 ------------------
 
-**4.** Data Flow Block Traffic Is Potentially Interrupted  [State: Not Started]  [Priority: High] 
+**4.** Data Flow Block Traffic Is Potentially Interrupted  
 
 Category:	Denial Of Service
 
@@ -189,7 +189,7 @@ Description:	An external agent interrupts data flowing across a trust boundary i
 
 Justification:	<no mitigation provided>
 
-**5.** Data Store Inaccessible  [State: Not Started]  [Priority: High] 
+**5.** Data Store Inaccessible 
 
 Category:	Denial Of Service
 
@@ -197,7 +197,7 @@ Description:	An external agent prevents access to a data store on the other side
 
 Justification:	<no mitigation provided>
 
-**6.** Potential Excessive Resource Consumption for Pi-hole or Blacklist  [State: Not Started]  [Priority: High] 
+**6.** Potential Excessive Resource Consumption for Pi-hole or Blacklist  
 
 Category:	Denial Of Service
 
@@ -205,7 +205,7 @@ Description:	Does Pi-hole or Blacklist take explicit steps to control resource c
 
 Justification:	<no mitigation provided>
 
-**9.** Potential Excessive Resource Consumption for Pi-hole or Whitelist   [State: Not Started]  [Priority: High] 
+**9.** Potential Excessive Resource Consumption for Pi-hole or Whitelist   
 
 Category:	Denial Of Service
 
@@ -213,7 +213,7 @@ Description:	Does Pi-hole or Whitelist  take explicit steps to control resource 
 
 Justification:	<no mitigation provided>
 
-**13.** Data Flow DNS Query Is Potentially Interrupted  [State: Not Started]  [Priority: High] 
+**13.** Data Flow DNS Query Is Potentially Interrupted  
 
 Category:	Denial Of Service
 
@@ -221,7 +221,7 @@ Description:	An external agent interrupts data flowing across a trust boundary i
 
 Justification:	<no mitigation provided>
 
-**14.** Data Store Inaccessible  [State: Not Started]  [Priority: High] 
+**14.** Data Store Inaccessible  
 
 Category:	Denial Of Service
 
@@ -229,7 +229,7 @@ Description:	An external agent prevents access to a data store on the other side
 
 Justification:	<no mitigation provided>
           
-**21.** Potential Process Crash or Stop for Pi-hole  [State: Not Started]  [Priority: High] 
+**21.** Potential Process Crash or Stop for Pi-hole 
 
 Category:	Denial Of Service
 
@@ -237,7 +237,7 @@ Description:	Pi-hole crashes, halts, stops or runs slowly; in all cases violatin
 
 Justification:	<no mitigation provided>
 
-**22.** Data Flow Input Data Flow Is Potentially Interrupted  [State: Not Started]  [Priority: High] 
+**22.** Data Flow Input Data Flow Is Potentially Interrupted 
 
 Category:	Denial Of Service
 
@@ -245,7 +245,7 @@ Description:	An external agent interrupts data flowing across a trust boundary i
 
 Justification:	<no mitigation provided>
 
-**30.** Data Flow Output Data Flow Is Potentially Interrupted  [State: Not Started]  [Priority: High] 
+**30.** Data Flow Output Data Flow Is Potentially Interrupted 
 
 Category:	Denial Of Service
 
@@ -253,7 +253,7 @@ Description:	An external agent interrupts data flowing across a trust boundary i
 
 Justification:	<no mitigation provided>
 
-**34.** Data Flow Pass Traffic Is Potentially Interrupted  [State: Not Started]  [Priority: High] 
+**34.** Data Flow Pass Traffic Is Potentially Interrupted 
 
 Category:	Denial Of Service
 
@@ -261,7 +261,7 @@ Description:	An external agent interrupts data flowing across a trust boundary i
 
 Justification:	<no mitigation provided>
 
-**35.** Data Store Inaccessible  [State: Not Started]  [Priority: High] 
+**35.** Data Store Inaccessible 
 
 Category:	Denial Of Service
 
@@ -272,7 +272,7 @@ Justification:	<no mitigation provided>
 Elevation of Privilege
 ----------------------
 
-**16.** Elevation Using Impersonation  [State: Not Started]  [Priority: High] 
+**16.** Elevation Using Impersonation  
 
 Category:	Elevation Of Privilege
 
@@ -280,7 +280,7 @@ Description:	Pi-hole may be able to impersonate the context of User in order to 
 
 Justification:	<no mitigation provided>
 
-**23.** Pi-hole May be Subject to Elevation of Privilege Using Remote Code Execution  [State: Not Started]  [Priority: High] 
+**23.** Pi-hole May be Subject to Elevation of Privilege Using Remote Code Execution  
 
 Category:	Elevation Of Privilege
 
@@ -288,7 +288,7 @@ Description:	User may be able to remotely execute code for Pi-hole.
 
 Justification:	<no mitigation provided>
 
-**24.** Elevation by Changing the Execution Flow in Pi-hole  [State: Not Started]  [Priority: High] 
+**24.** Elevation by Changing the Execution Flow in Pi-hole 
 
 Category:	Elevation Of Privilege
 
@@ -296,7 +296,7 @@ Description:	An attacker may pass data into Pi-hole in order to change the flow 
 
 Justification:	<no mitigation provided>
 
-**25.** Cross Site Request Forgery  [State: Not Started]  [Priority: High] 
+**25.** Cross Site Request Forgery 
 
 Category:	Elevation Of Privilege
 
