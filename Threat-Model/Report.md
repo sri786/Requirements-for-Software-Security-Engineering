@@ -10,56 +10,74 @@ Spoofing
 
 **1.** Spoofing of Source Data Store Blacklist  [State: Not Started]  [Priority: High] 
 
-Category:	Spoofing
+*Category:*	Spoofing
+
 Description:	Blacklist may be spoofed by an attacker and this may lead to incorrect data delivered to Network Traffic Result. Consider using a standard authentication mechanism to identify the source data store.
+
 Justification:	<no mitigation provided>
 
 **7.** Spoofing of Destination Data Store Blacklist  [State: Not Started]  [Priority: High] 
 
-Category:	Spoofing
+*Category:*	Spoofing
+
 Description:	Blacklist may be spoofed by an attacker and this may lead to data being written to the attacker's target instead of Blacklist. Consider using a standard authentication mechanism to identify the destination data store.
+
 Justification:	<no mitigation provided>
 
 **8.** Spoofing of Destination Data Store Whitelist   [State: Not Started]  [Priority: High] 
 
-Category:	Spoofing
+*Category:*          Spoofing
+
 Description:	Whitelist  may be spoofed by an attacker and this may lead to data being written to the attacker's target instead of Whitelist . Consider using a standard authentication mechanism to identify the destination data store.
+
 Justification:	<no mitigation provided>
 
 **10.** Spoofing of Destination Data Store DNS log  [State: Not Started]  [Priority: High] 
 
-Category:	Spoofing
+*Category:*	Spoofing
+
 Description:	DNS log may be spoofed by an attacker and this may lead to data being written to the attacker's target instead of DNS log. Consider using a standard authentication mechanism to identify the destination data store.
+
 Justification:	<no mitigation provided>
 
 **15.** Spoofing the User External Entity  [State: Not Started]  [Priority: High] 
 
 Category:	Spoofing
+
 Description:	User may be spoofed by an attacker and this may lead to unauthorized access to Pi-hole. Consider using a standard authentication mechanism to identify the external entity.
+
 Justification:	<no mitigation provided>
 
 **17.** Spoofing the Pi-hole Process  [State: Not Started]  [Priority: High] 
 
 Category:	Spoofing
+
 Description:	Pi-hole may be spoofed by an attacker and this may lead to information disclosure by User. Consider using a standard authentication mechanism to identify the destination process.
+
 Justification:	<no mitigation provided>
 
 **27.** Spoofing of Source Data Store DNS log  [State: Not Started]  [Priority: High] 
 
 Category:	Spoofing
+
 Description:	DNS log may be spoofed by an attacker and this may lead to incorrect data delivered to Pi-hole. Consider using a standard authentication mechanism to identify the source data store.
+
 Justification:	<no mitigation provided>
 
 **28.** Spoofing of the User External Destination Entity  [State: Not Started]  [Priority: High] 
 
 Category:	Spoofing
+
 Description:	User may be spoofed by an attacker and this may lead to data being sent to the attacker's target instead of User. Consider using a standard authentication mechanism to identify the external entity.
+
 Justification:	<no mitigation provided>
 
 **31.** Spoofing of Source Data Store Whitelist   [State: Not Started]  [Priority: High] 
 
 Category:	Spoofing
+
 Description:	Whitelist  may be spoofed by an attacker and this may lead to incorrect data delivered to Network Traffic Result. Consider using a standard authentication mechanism to identify the source data store.
+
 Justification:	<no mitigation provided>
 
 
@@ -69,13 +87,17 @@ Tampering
 **11.** The DNS log Data Store Could Be Corrupted  [State: Not Started]  [Priority: High] 
 
 Category:	Tampering
+
 Description:	Data flowing across DNS Query may be tampered with by an attacker. This may lead to corruption of DNS log. Ensure the integrity of the data flow to the data store.
+
 Justification:	<no mitigation provided>
 
 **18.** Potential Lack of Input Validation for Pi-hole  [State: Not Started]  [Priority: High] 
 
 Category:	Tampering
+
 Description:	Data flowing across Input Data Flow may be tampered with by an attacker. This may lead to a denial of service attack against Pi-hole or an elevation of privilege attack against Pi-hole or an information disclosure by Pi-hole. Failure to verify that input is as expected is a root cause of a very large number of exploitable issues. Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved list input validation approach.
+
 Justification:	<no mitigation provided>
 
 Repudiation
@@ -84,31 +106,41 @@ Repudiation
 **3.** External Entity Network Traffic Result Potentially Denies Receiving Data  [State: Not Started]  [Priority: High] 
 
 Category:	Repudiation
+
 Description:	Network Traffic Result claims that it did not receive data from a process on the other side of the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
+
 Justification:	<no mitigation provided>
 
 **12.** Data Store Denies DNS log Potentially Writing Data  [State: Not Started]  [Priority: High] 
 
 Category:	Repudiation
+
 Description:	DNS log claims that it did not write data received from an entity on the other side of the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
+
 Justification:	<no mitigation provided>
 
 **19.** Potential Data Repudiation by Pi-hole  [State: Not Started]  [Priority: High] 
 
 Category:	Repudiation
+
 Description:	Pi-hole claims that it did not receive data from a source outside the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
+
 Justification:	<no mitigation provided>
 
 **29.** External Entity User Potentially Denies Receiving Data  [State: Not Started]  [Priority: High] 
 
 Category:	Repudiation
+
 Description:	User claims that it did not receive data from a process on the other side of the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
+
 Justification:	<no mitigation provided>
 
 **33.** External Entity Network Traffic Result Potentially Denies Receiving Data  [State: Not Started]  [Priority: High] 
 
 Category:	Repudiation
+
 Description:	Network Traffic Result claims that it did not receive data from a process on the other side of the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
+
 Justification:	<no mitigation provided>
 
 Information Disclosure
@@ -117,25 +149,33 @@ Information Disclosure
 **2.** Weak Access Control for a Resource  [State: Not Started]  [Priority: High] 
 
 Category:	Information Disclosure
+
 Description:	Improper data protection of Blacklist can allow an attacker to read information not intended for disclosure. Review authorization settings.
+
 Justification:	<no mitigation provided>
 
 **20.** Data Flow Sniffing  [State: Not Started]  [Priority: High] 
 
 Category:	Information Disclosure
+
 Description:	Data flowing across Input Data Flow may be sniffed by an attacker. Depending on what type of data an attacker can read, it may be used to attack other parts of the system or simply be a disclosure of information leading to compliance violations. Consider encrypting the data flow.
+
 Justification:	<no mitigation provided>
 
 **26.** Weak Access Control for a Resource  [State: Not Started]  [Priority: High] 
 
 Category:	Information Disclosure
+
 Description:	Improper data protection of DNS log can allow an attacker to read information not intended for disclosure. Review authorization settings.
+
 Justification:	<no mitigation provided>
 
 **32.** Weak Access Control for a Resource  [State: Not Started]  [Priority: High] 
 
 Category:	Information Disclosure
+
 Description:	Improper data protection of Whitelist  can allow an attacker to read information not intended for disclosure. Review authorization settings.
+
 Justification:	<no mitigation provided>
 
 Denial of Service
@@ -144,67 +184,89 @@ Denial of Service
 **4.** Data Flow Block Traffic Is Potentially Interrupted  [State: Not Started]  [Priority: High] 
 
 Category:	Denial Of Service
+
 Description:	An external agent interrupts data flowing across a trust boundary in either direction.
+
 Justification:	<no mitigation provided>
 
 **5.** Data Store Inaccessible  [State: Not Started]  [Priority: High] 
 
 Category:	Denial Of Service
+
 Description:	An external agent prevents access to a data store on the other side of the trust boundary.
+
 Justification:	<no mitigation provided>
 
 **6.** Potential Excessive Resource Consumption for Pi-hole or Blacklist  [State: Not Started]  [Priority: High] 
 
 Category:	Denial Of Service
+
 Description:	Does Pi-hole or Blacklist take explicit steps to control resource consumption? Resource consumption attacks can be hard to deal with, and there are times that it makes sense to let the OS do the job. Be careful that your resource requests don't deadlock, and that they do timeout.
+
 Justification:	<no mitigation provided>
 
 **9.** Potential Excessive Resource Consumption for Pi-hole or Whitelist   [State: Not Started]  [Priority: High] 
 
 Category:	Denial Of Service
+
 Description:	Does Pi-hole or Whitelist  take explicit steps to control resource consumption? Resource consumption attacks can be hard to deal with, and there are times that it makes sense to let the OS do the job. Be careful that your resource requests don't deadlock, and that they do timeout.
+
 Justification:	<no mitigation provided>
 
 **13.** Data Flow DNS Query Is Potentially Interrupted  [State: Not Started]  [Priority: High] 
 
 Category:	Denial Of Service
+
 Description:	An external agent interrupts data flowing across a trust boundary in either direction.
+
 Justification:	<no mitigation provided>
 
 **14.** Data Store Inaccessible  [State: Not Started]  [Priority: High] 
 
 Category:	Denial Of Service
+
 Description:	An external agent prevents access to a data store on the other side of the trust boundary.
+
 Justification:	<no mitigation provided>
           
 **21.** Potential Process Crash or Stop for Pi-hole  [State: Not Started]  [Priority: High] 
 
 Category:	Denial Of Service
+
 Description:	Pi-hole crashes, halts, stops or runs slowly; in all cases violating an availability metric.
+
 Justification:	<no mitigation provided>
 
 **22.** Data Flow Input Data Flow Is Potentially Interrupted  [State: Not Started]  [Priority: High] 
 
 Category:	Denial Of Service
+
 Description:	An external agent interrupts data flowing across a trust boundary in either direction.
+
 Justification:	<no mitigation provided>
 
 **30.** Data Flow Output Data Flow Is Potentially Interrupted  [State: Not Started]  [Priority: High] 
 
 Category:	Denial Of Service
+
 Description:	An external agent interrupts data flowing across a trust boundary in either direction.
+
 Justification:	<no mitigation provided>
 
 **34.** Data Flow Pass Traffic Is Potentially Interrupted  [State: Not Started]  [Priority: High] 
 
 Category:	Denial Of Service
+
 Description:	An external agent interrupts data flowing across a trust boundary in either direction.
+
 Justification:	<no mitigation provided>
 
 **35.** Data Store Inaccessible  [State: Not Started]  [Priority: High] 
 
 Category:	Denial Of Service
+
 Description:	An external agent prevents access to a data store on the other side of the trust boundary.
+
 Justification:	<no mitigation provided>
 
 Elevation of Privilege
@@ -213,25 +275,33 @@ Elevation of Privilege
 **16.** Elevation Using Impersonation  [State: Not Started]  [Priority: High] 
 
 Category:	Elevation Of Privilege
+
 Description:	Pi-hole may be able to impersonate the context of User in order to gain additional privilege.
+
 Justification:	<no mitigation provided>
 
 **23.** Pi-hole May be Subject to Elevation of Privilege Using Remote Code Execution  [State: Not Started]  [Priority: High] 
 
 Category:	Elevation Of Privilege
+
 Description:	User may be able to remotely execute code for Pi-hole.
+
 Justification:	<no mitigation provided>
 
 **24.** Elevation by Changing the Execution Flow in Pi-hole  [State: Not Started]  [Priority: High] 
 
 Category:	Elevation Of Privilege
+
 Description:	An attacker may pass data into Pi-hole in order to change the flow of program execution within Pi-hole to the attacker's choosing.
+
 Justification:	<no mitigation provided>
 
 **25.** Cross Site Request Forgery  [State: Not Started]  [Priority: High] 
 
 Category:	Elevation Of Privilege
+
 Description:	Cross-site request forgery (CSRF or XSRF) is a type of attack in which an attacker forces a user's browser to make a forged request to a vulnerable site by exploiting an existing trust relationship between the browser and the vulnerable web site.  In a simple scenario, a user is logged in to web site A using a cookie as a credential.  The other browses to web site B.  Web site B returns a page with a hidden form that posts to web site A.  Since the browser will carry the user's cookie to web site A, web site B now can take any action on web site A, for example, adding an admin to an account.  The attack can be used to exploit any requests that the browser automatically authenticates, e.g. by session cookie, integrated authentication, IP whitelisting, …  The attack can be carried out in many ways such as by luring the victim to a site under control of the attacker, getting the user to click a link in a phishing email, or hacking a reputable web site that the victim will visit. The issue can only be resolved on the server side by requiring that all authenticated state-changing requests include an additional piece of secret payload (canary or CSRF token) which is known only to the legitimate web site and the browser and which is protected in transit through SSL/TLS. See the Forgery Protection property on the flow stencil for a list of mitigations.
+
 Justification:	<no mitigation provided>
 
 
