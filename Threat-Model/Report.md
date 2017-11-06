@@ -1,13 +1,88 @@
 Pi-hole Threat Model
 ------------------
 
-Elaborate the Misuse cases using Threat models
+R3tr0 evaluated the open source software Pi-hole utilizing the Microsoft Threat modeling tool 2016 and the previous [misuse cases](https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23) which allowed the group to identify the threat model against the Pi-hole process. Retr0 developed a level 1 DFD which supports all threats identified within the previous misuse cases within Lucid Chart located [here.](https://www.lucidchart.com/invitations/accept/03df13bf-2fe3-4b3c-a4bb-1493b038bd23)
 
-Develop Level 1 DFDs that supports each of your use cases. Perform analysis on your code base to align the diagram with reality Draw the DFDs in TMT 2016 Identify appropriate trust boundaries on the diagram Validate the diagram for any obvious structural deficiencies
+R3tr0 analyzed this diagram and by utilizing the STRIDE model we have identified the following threats as outlined below. 
 
-Analyze the Level 1 diagram to identify the applicable STRIDE threats
+**Spoofing**
+--------
 
-Examine each threat automatically identified Document mitigation strategies for the identified threats Pay special attention for elements that interact across threat boundaries Generate a full HTML report using TMT 2016 Host the reports on your project github repo. Review OSS project actual software design for security related issues based on your threat models. Summarize your observations.
+**1.** Spoofing of Source Data Store Blacklist  [State: Not Started]  [Priority: High] 
+
+Category:	Spoofing
+Description:	Blacklist may be spoofed by an attacker and this may lead to incorrect data delivered to Network Traffic Result. Consider using a standard authentication mechanism to identify the source data store.
+Justification:	<no mitigation provided>
+
+**7.** Spoofing of Destination Data Store Blacklist  [State: Not Started]  [Priority: High] 
+
+Category:	Spoofing
+Description:	Blacklist may be spoofed by an attacker and this may lead to data being written to the attacker's target instead of Blacklist. Consider using a standard authentication mechanism to identify the destination data store.
+Justification:	<no mitigation provided>
+
+**8.** Spoofing of Destination Data Store Whitelist   [State: Not Started]  [Priority: High] 
+
+Category:	Spoofing
+Description:	Whitelist  may be spoofed by an attacker and this may lead to data being written to the attacker's target instead of Whitelist . Consider using a standard authentication mechanism to identify the destination data store.
+Justification:	<no mitigation provided>
+
+**10.** Spoofing of Destination Data Store DNS log  [State: Not Started]  [Priority: High] 
+
+Category:	Spoofing
+Description:	DNS log may be spoofed by an attacker and this may lead to data being written to the attacker's target instead of DNS log. Consider using a standard authentication mechanism to identify the destination data store.
+Justification:	<no mitigation provided>
+
+**15.** Spoofing the User External Entity  [State: Not Started]  [Priority: High] 
+
+Category:	Spoofing
+Description:	User may be spoofed by an attacker and this may lead to unauthorized access to Pi-hole. Consider using a standard authentication mechanism to identify the external entity.
+Justification:	<no mitigation provided>
+
+**17.** Spoofing the Pi-hole Process  [State: Not Started]  [Priority: High] 
+
+Category:	Spoofing
+Description:	Pi-hole may be spoofed by an attacker and this may lead to information disclosure by User. Consider using a standard authentication mechanism to identify the destination process.
+Justification:	<no mitigation provided>
+
+**27.** Spoofing of Source Data Store DNS log  [State: Not Started]  [Priority: High] 
+
+Category:	Spoofing
+Description:	DNS log may be spoofed by an attacker and this may lead to incorrect data delivered to Pi-hole. Consider using a standard authentication mechanism to identify the source data store.
+Justification:	<no mitigation provided>
+
+**28.** Spoofing of the User External Destination Entity  [State: Not Started]  [Priority: High] 
+
+Category:	Spoofing
+Description:	User may be spoofed by an attacker and this may lead to data being sent to the attacker's target instead of User. Consider using a standard authentication mechanism to identify the external entity.
+Justification:	<no mitigation provided>
+
+**31.** Spoofing of Source Data Store Whitelist   [State: Not Started]  [Priority: High] 
+
+Category:	Spoofing
+Description:	Whitelist  may be spoofed by an attacker and this may lead to incorrect data delivered to Network Traffic Result. Consider using a standard authentication mechanism to identify the source data store.
+Justification:	<no mitigation provided>
+
+
+Tampering
+---------
+
+
+Repudiation
+-----------
+
+
+Information Disclosure
+-----------------------
+
+
+Denial of Service
+------------------
+
+
+Elevation of Privilege
+----------------------
+
+
 
 Grading criteria
 
