@@ -1,6 +1,23 @@
 Pi-hole Threat Model
 ------------------
 
+Elaborate the Misuse cases using Threat models
+
+Develop Level 1 DFDs that supports each of your use cases. Perform analysis on your code base to align the diagram with reality Draw the DFDs in TMT 2016 Identify appropriate trust boundaries on the diagram Validate the diagram for any obvious structural deficiencies
+
+Analyze the Level 1 diagram to identify the applicable STRIDE threats
+
+Examine each threat automatically identified Document mitigation strategies for the identified threats Pay special attention for elements that interact across threat boundaries Generate a full HTML report using TMT 2016 Host the reports on your project github repo. Review OSS project actual software design for security related issues based on your threat models. Summarize your observations.
+
+Grading criteria
+
+Use of proper notations DFD notation Threat Model Quality Threat model focuses on critical components of interest Proper wording of the model elements Clean, coherent and valid DFD diagram Threat Mitigation Quality Quality of analysis to mitigate threats
+
+Due Date
+
+Wednesday November 8th, 2017
+
+
 Current threat model
 --------------------
 <p align="center">
@@ -10,15 +27,19 @@ Current threat model
 
 
 <body><h1 class="title" tabindex="0">Threat Modeling Report</h1><span tabindex="0">
-          Created on 11/5/2017 5:30:00 PM</span><p tabindex="0"><strong>Threat Model Name: Pi-hole Threat Model</strong></p><p tabindex="0"><strong>Owner: R3tr0 </strong></p><p tabindex="0"><strong>Reviewer: Michael Galde </strong></p><p tabindex="0"><strong>Contributors: Carmel, Olivier, Srikanth </strong></p><p tabindex="0"><strong>Description: A review of the Pi-hole threat model</strong></p><p tabindex="0"><strong>Assumptions: We assume a clean insall on a Raspberry Pi ** Add More Here **</strong></p><p tabindex="0"><strong>External Dependencies: </strong></p><br /><h3 tabindex="0">Threat Model Summary:</h3><table><tr tabindex="0" role="row"><td>Not Started</td><td>35</td></tr><tr tabindex="0" role="row"><td>Not Applicable</td><td>0</td></tr><tr tabindex="0" role="row"><td>Needs Investigation</td><td>0</td></tr><tr tabindex="0" role="row"><td>Mitigation Implemented</td><td>0</td></tr><tr tabindex="0" role="row"><td>Total</td><td>35</td></tr><tr tabindex="0" role="row"><td>Total Migrated</td><td>0</td></tr></table><p class="bugtrack" /><hr /><h2 tabindex="0">
-            Diagram: Pi-hole overview</h2>
+          Created on 11/8/2017 5:30:00 PM</span><p tabindex="0"><strong>Threat Model Name: Pi-hole Threat Model</strong></p><p tabindex="0"><strong>Owner: R3tr0 </strong></p><p tabindex="0"><strong>Reviewer: Michael Galde </strong></p><p tabindex="0"><strong>Contributors: Carmel, Olivier, Srikanth </strong></p><p tabindex="0"><strong>Description: A review of the Pi-hole threat model</strong></p><p tabindex="0"><strong>Assumptions: We assume a clean insall on a Raspberry Pi ** Add More Here **</strong></p><p tabindex="0"><strong>External Dependencies: </strong></p><br /><h3 tabindex="0">Threat Model Summary:</h3><table><tr tabindex="0" role="row"><td>Not Started</td><td>35</td></tr><tr tabindex="0" role="row"><td>Not Applicable</td><td>0</td></tr><tr tabindex="0" role="row"><td>Needs Investigation</td><td>0</td></tr><tr tabindex="0" role="row"><td>Mitigation Implemented</td><td>0</td></tr><tr tabindex="0" role="row"><td>Total</td><td>35</td></tr><tr tabindex="0" role="row"><td>Total Migrated</td><td>0</td></tr></table><p class="bugtrack" /><hr /><h2 tabindex="0">
+
+Diagram: Pi-hole overview</h2>
 <img src="https://user-images.githubusercontent.com/30883926/32421596-e1c10984-c25f-11e7-8ac2-ead95c84d45d.png"/><h3 tabindex="0">Pi-hole overview Summary:
           </h3><table><tr tabindex="0" role="row"><td>Not Started</td><td>35</td></tr><tr tabindex="0" role="row"><td>Not Applicable</td><td>0</td></tr><tr tabindex="0" role="row"><td>Needs Investigation</td><td>0</td></tr><tr tabindex="0" role="row"><td>Mitigation Implemented</td><td>0</td></tr><tr tabindex="0" role="row"><td>Total</td><td>35</td></tr><tr tabindex="0" role="row"><td>Total Migrated</td><td>0</td></tr></table><h3 tabindex="0">
-      
+
+
 Interaction: Block Traffic</h3><img src="https://user-images.githubusercontent.com/30883926/32421706-9f656cbe-c260-11e7-88d5-4e72f2336214.png"/><div class="threat"><h4 tabindex="0" id="&#xA;          t1"><span>1. Spoofing of Source Data Store Blacklist</span> 
         [State: Not Started] 
         [Priority: High] 
-        </h4><table role="grid"><tr><td id="threat-title-category" role="rowheader" tabindex="0"><strong>Category:</strong></td><td class="infotd" tabindex="0" role="gridcell" headers="threat-title-category">Spoofing</td></tr><tr><td id="threat-title-description" role="rowheader" tabindex="0"><strong>Description:</strong></td><td class="infotd" tabindex="0" role="gridcell" headers="threat-title-description">Blacklist may be spoofed by an attacker and this may lead to incorrect data delivered to Network Traffic Result. Consider using a standard authentication mechanism to identify the source data store.</td></tr><tr><td id="threat-title-justification" role="rowheader" tabindex="0"><strong>Justification:</strong></td><td class="infotd" tabindex="0" role="gridcell" headers="threat-title-justification">&lt;no mitigation provided&gt;</td></tr></table></div><div class="threat"><h4 tabindex="0" id="&#xA;          t2"><span>2. Weak Access Control for a Resource</span> 
+        </h4><table role="grid"><tr><td id="threat-title-category" role="rowheader" tabindex="0"><strong>Category:</strong></td><td class="infotd" tabindex="0" role="gridcell" headers="threat-title-category">Spoofing</td></tr><tr><td id="threat-title-description" role="rowheader" tabindex="0"><strong>Description:</strong></td><td class="infotd" tabindex="0" role="gridcell" headers="threat-title-description">Blacklist may be spoofed by an attacker and this may lead to incorrect data delivered to Network Traffic Result. Consider using a standard authentication mechanism to identify the source data store.</td></tr><tr><td id="threat-title-justification" role="rowheader" tabindex="0"><strong>Justification:</strong></td>
+
+<td class="infotd" tabindex="0" role="gridcell" headers="threat-title-justification">&lt;no mitigation provided&gt;</td></tr></table></div><div class="threat"><h4 tabindex="0" id="&#xA;          t2"><span>2. Weak Access Control for a Resource</span> 
         [State: Not Started] 
         [Priority: High] 
         </h4><table role="grid"><tr><td id="threat-title-category" role="rowheader" tabindex="0"><strong>Category:</strong></td><td class="infotd" tabindex="0" role="gridcell" headers="threat-title-category">Information Disclosure</td></tr><tr><td id="threat-title-description" role="rowheader" tabindex="0"><strong>Description:</strong></td><td class="infotd" tabindex="0" role="gridcell" headers="threat-title-description">Improper data protection of Blacklist can allow an attacker to read information not intended for disclosure. Review authorization settings.</td></tr><tr><td id="threat-title-justification" role="rowheader" tabindex="0"><strong>Justification:</strong></td><td class="infotd" tabindex="0" role="gridcell" headers="threat-title-justification">&lt;no mitigation provided&gt;</td></tr></table></div><div class="threat"><h4 tabindex="0" id="&#xA;          t3"><span>3. External Entity Network Traffic Result Potentially Denies Receiving Data</span> 
