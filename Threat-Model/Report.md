@@ -213,7 +213,7 @@ Justification:	<no mitigation provided>
 Denial of Service
 ------------------
 
-**4.** Data Flow Block Traffic Is Potentially Interrupted  
+**3.** Data Flow Block Traffic Is Potentially Interrupted  
 
 Category:	Denial Of Service
 
@@ -221,47 +221,15 @@ Description:	An external agent interrupts data flowing across a trust boundary i
 
 Justification:	<no mitigation provided>
 
-**5.** Data Store Inaccessible 
+**5.** Potential Excessive Resource Consumption for Pi-hole or Whitelist / Blacklist 
 
 Category:	Denial Of Service
 
-Description:	An external agent prevents access to a data store on the other side of the trust boundary.
+Description:	Does Pi-hole or Whitelist / Blacklist take explicit steps to control resource consumption? Resource consumption attacks can be hard to deal with, and there are times that it makes sense to let the OS do the job. Be careful that your resource requests don't deadlock, and that they do timeout.
 
 Justification:	<no mitigation provided>
 
-**6.** Potential Excessive Resource Consumption for Pi-hole or Blacklist  
-
-Category:	Denial Of Service
-
-Description:	Does Pi-hole or Blacklist take explicit steps to control resource consumption? Resource consumption attacks can be hard to deal with, and there are times that it makes sense to let the OS do the job. Be careful that your resource requests don't deadlock, and that they do timeout.
-
-Justification:	<no mitigation provided>
-
-**9.** Potential Excessive Resource Consumption for Pi-hole or Whitelist   
-
-Category:	Denial Of Service
-
-Description:	Does Pi-hole or Whitelist  take explicit steps to control resource consumption? Resource consumption attacks can be hard to deal with, and there are times that it makes sense to let the OS do the job. Be careful that your resource requests don't deadlock, and that they do timeout.
-
-Justification:	<no mitigation provided>
-
-**13.** Data Flow DNS Query Is Potentially Interrupted  
-
-Category:	Denial Of Service
-
-Description:	An external agent interrupts data flowing across a trust boundary in either direction.
-
-Justification:	<no mitigation provided>
-
-**14.** Data Store Inaccessible  
-
-Category:	Denial Of Service
-
-Description:	An external agent prevents access to a data store on the other side of the trust boundary.
-
-Justification:	<no mitigation provided>
-          
-**21.** Potential Process Crash or Stop for Pi-hole 
+**11.** Potential Process Crash or Stop for Pi-hole  
 
 Category:	Denial Of Service
 
@@ -269,7 +237,7 @@ Description:	Pi-hole crashes, halts, stops or runs slowly; in all cases violatin
 
 Justification:	<no mitigation provided>
 
-**22.** Data Flow Input Data Flow Is Potentially Interrupted 
+**12.** Data Flow DNS Query Is Potentially Interrupted  
 
 Category:	Denial Of Service
 
@@ -277,7 +245,15 @@ Description:	An external agent interrupts data flowing across a trust boundary i
 
 Justification:	<no mitigation provided>
 
-**30.** Data Flow Output Data Flow Is Potentially Interrupted 
+**22.** Potential Process Crash or Stop for Pi-hole  
+
+Category:	Denial Of Service
+
+Description:	Pi-hole crashes, halts, stops or runs slowly; in all cases violating an availability metric.
+
+Justification:	<no mitigation provided>
+
+**23.** Data Flow Input Data Flow Is Potentially Interrupted  
 
 Category:	Denial Of Service
 
@@ -285,7 +261,15 @@ Description:	An external agent interrupts data flowing across a trust boundary i
 
 Justification:	<no mitigation provided>
 
-**34.** Data Flow Pass Traffic Is Potentially Interrupted 
+**34.** Potential Process Crash or Stop for Pi-hole  
+
+Category:	Denial Of Service
+
+Description:	Pi-hole crashes, halts, stops or runs slowly; in all cases violating an availability metric.
+
+Justification:	<no mitigation provided>
+
+**33.** Data Flow Input Data Flow Is Potentially Interrupted  
 
 Category:	Denial Of Service
 
@@ -293,13 +277,30 @@ Description:	An external agent interrupts data flowing across a trust boundary i
 
 Justification:	<no mitigation provided>
 
-**35.** Data Store Inaccessible 
+**40.** Potential Excessive Resource Consumption for Pi-hole or DNS log  
 
 Category:	Denial Of Service
 
-Description:	An external agent prevents access to a data store on the other side of the trust boundary.
+Description:	Does Pi-hole or DNS log take explicit steps to control resource consumption? Resource consumption attacks can be hard to deal with, and there are times that it makes sense to let the OS do the job. Be careful that your resource requests don't deadlock, and that they do timeout.
 
 Justification:	<no mitigation provided>
+          
+**43.** Data Flow Output Data Flow Is Potentially Interrupted  
+
+Category:	Denial Of Service
+
+Description:	An external agent interrupts data flowing across a trust boundary in either direction.
+
+Justification:	<no mitigation provided>
+          
+**46.** Data Flow Output Data Flow Is Potentially Interrupted  
+
+Category:	Denial Of Service
+
+Description:	An external agent interrupts data flowing across a trust boundary in either direction.
+
+Justification:	<no mitigation provided>
+
 
 Elevation of Privilege
 ----------------------
