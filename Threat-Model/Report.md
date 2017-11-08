@@ -186,15 +186,15 @@ Justification:	<no mitigation provided>
 Information Disclosure
 -----------------------
 
-**2.** Weak Access Control for a Resource  
+**10.** Data Flow Sniffing  
 
 Category:	Information Disclosure
 
-Description:	Improper data protection of Blacklist can allow an attacker to read information not intended for disclosure. Review authorization settings.
+Description:	Data flowing across DNS Query may be sniffed by an attacker. Depending on what type of data an attacker can read, it may be used to attack other parts of the system or simply be a disclosure of information leading to compliance violations. Consider encrypting the data flow.
 
 Justification:	<no mitigation provided>
 
-**20.** Data Flow Sniffing  
+**21.** Data Flow Sniffing  
 
 Category:	Information Disclosure
 
@@ -202,19 +202,11 @@ Description:	Data flowing across Input Data Flow may be sniffed by an attacker. 
 
 Justification:	<no mitigation provided>
 
-**26.** Weak Access Control for a Resource  
+**33.** Data Flow Sniffing  
 
 Category:	Information Disclosure
 
-Description:	Improper data protection of DNS log can allow an attacker to read information not intended for disclosure. Review authorization settings.
-
-Justification:	<no mitigation provided>
-
-**32.** Weak Access Control for a Resource  
-
-Category:	Information Disclosure
-
-Description:	Improper data protection of Whitelist  can allow an attacker to read information not intended for disclosure. Review authorization settings.
+Description:	Data flowing across Input HTTP Data may be sniffed by an attacker. Depending on what type of data an attacker can read, it may be used to attack other parts of the system or simply be a disclosure of information leading to compliance violations. Consider encrypting the data flow.
 
 Justification:	<no mitigation provided>
 
