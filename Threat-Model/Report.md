@@ -8,59 +8,59 @@ R3tr0 analyzed this diagram and by utilizing the STRIDE model we have identified
 Spoofing
 --------
 
-**1.** Spoofing of Source Data Store Blacklist  
+**1.** Spoofing of the Network Traffic External Destination Entity  
 
 *Category:*	Spoofing
 
-Description:	Blacklist may be spoofed by an attacker and this may lead to incorrect data delivered to Network Traffic Results. Consider using a standard authentication mechanism to identify the source data store.
+Description:	Network Traffic may be spoofed by an attacker and this may lead to data being sent to the attacker's target instead of Network Traffic. Consider using a standard authentication mechanism to identify the external entity.
 
 Justification:	<no mitigation provided>
 
-**7.** Spoofing of Destination Data Store Blacklist
+**4.** Spoofing of Destination Data Store Whitelist / Blacklist
 
 *Category:*	Spoofing
 
-Description:	Blacklist may be spoofed by an attacker and this may lead to data being written to the attacker's target instead of Blacklist. Consider using a standard authentication mechanism to identify the destination data store.
+Description:	Whitelist / Blacklist may be spoofed by an attacker and this may lead to data being written to the attacker's target instead of Whitelist / Blacklist. Consider using a standard authentication mechanism to identify the destination data store.
 
 Justification:	<no mitigation provided>
 
-**8.** Spoofing of Destination Data Store Whitelist
+**6.** Spoofing the Pi-hole Process
 
 *Category:*          Spoofing
 
-Description:	Whitelist  may be spoofed by an attacker and this may lead to data being written to the attacker's target instead of Whitelist . Consider using a standard authentication mechanism to identify the destination data store.
+Description:	Pi-hole may be spoofed by an attacker and this may lead to information disclosure by Network Traffic. Consider using a standard authentication mechanism to identify the destination process.
 
 Justification:	<no mitigation provided>
 
-**10.** Spoofing of Destination Data Store DNS log
+**7.** Spoofing the Network Traffic External Entity
 
 *Category:*	Spoofing
 
-Description:	DNS log may be spoofed by an attacker and this may lead to data being written to the attacker's target instead of DNS log. Consider using a standard authentication mechanism to identify the destination data store.
+Description:	Network Traffic may be spoofed by an attacker and this may lead to unauthorized access to Pi-hole. Consider using a standard authentication mechanism to identify the external entity.
 
 Justification:	<no mitigation provided>
 
-**15.** Spoofing the User External Entity 
+**17.** Spoofing the Pi-hole Process 
 
 Category:	Spoofing
 
-Description:	User may be spoofed by an attacker and this may lead to unauthorized access to Pi-hole. Consider using a standard authentication mechanism to identify the external entity.
+Description:	Pi-hole may be spoofed by an attacker and this may lead to information disclosure by CLI user. Consider using a standard authentication mechanism to identify the destination process.
 
 Justification:	<no mitigation provided>
 
-**17.** Spoofing the Pi-hole Process  
+**18.** Spoofing the CLI user External Entity  
 
 Category:	Spoofing
 
-Description:	Pi-hole may be spoofed by an attacker and this may lead to information disclosure by User. Consider using a standard authentication mechanism to identify the destination process.
+Description:	CLI user may be spoofed by an attacker and this may lead to unauthorized access to Pi-hole. Consider using a standard authentication mechanism to identify the external entity.
 
 Justification:	<no mitigation provided>
 
-**27.** Spoofing of Source Data Store DNS log 
+**28.** Spoofing the User External Entity 
 
 Category:	Spoofing
 
-Description:	DNS log may be spoofed by an attacker and this may lead to incorrect data delivered to Pi-hole. Consider using a standard authentication mechanism to identify the source data store.
+Description:	Web user may be spoofed by an attacker and this may lead to unauthorized access to Pi-hole. Consider using a standard authentication mechanism to identify the external entity.
 
 Justification:	<no mitigation provided>
 
@@ -72,14 +72,37 @@ Description:	User may be spoofed by an attacker and this may lead to data being 
 
 Justification:	<no mitigation provided>
 
-**31.** Spoofing of Source Data Store Whitelist  
+**30.** Spoofing the Pi-hole Process  
 
 Category:	Spoofing
 
-Description:	Whitelist  may be spoofed by an attacker and this may lead to incorrect data delivered to Network Traffic Result. Consider using a standard authentication mechanism to identify the source data store.
+Description:	Pi-hole may be spoofed by an attacker and this may lead to information disclosure by Web user. Consider using a standard authentication mechanism to identify the destination process.
 
 Justification:	<no mitigation provided>
 
+**39.** Spoofing of Destination Data Store DNS log  
+
+Category:	Spoofing
+
+Description:	DNS log may be spoofed by an attacker and this may lead to data being written to the attacker's target instead of DNS log. Consider using a standard authentication mechanism to identify the destination data store.
+
+Justification:	<no mitigation provided>
+          
+**41.** Spoofing of the CLI user External Destination Entity  
+
+Category:	Spoofing
+
+Description:	CLI user may be spoofed by an attacker and this may lead to data being sent to the attacker's target instead of CLI user. Consider using a standard authentication mechanism to identify the external entity.
+
+Justification:	<no mitigation provided>
+
+**44.** Spoofing of the User External Destination Entity  
+
+Category:	Spoofing
+
+Description:	Web user may be spoofed by an attacker and this may lead to data being sent to the attacker's target instead of Web user. Consider using a standard authentication mechanism to identify the external entity.
+
+Justification:	<no mitigation provided>
 
 Tampering
 ---------
