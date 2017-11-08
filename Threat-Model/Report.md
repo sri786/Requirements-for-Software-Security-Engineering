@@ -107,15 +107,15 @@ Justification:	<no mitigation provided>
 Tampering
 ---------
 
-**11.** The DNS log Data Store Could Be Corrupted 
+**8.** Potential Lack of Input Validation for Pi-hole 
 
 Category:	Tampering
 
-Description:	Data flowing across DNS Query may be tampered with by an attacker. This may lead to corruption of DNS log. Ensure the integrity of the data flow to the data store.
+Description:	Data flowing across DNS Query may be tampered with by an attacker. This may lead to a denial of service attack against Pi-hole or an elevation of privilege attack against Pi-hole or an information disclosure by Pi-hole. Failure to verify that input is as expected is a root cause of a very large number of exploitable issues. Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved list input validation approach.
 
 Justification:	<no mitigation provided>
 
-**18.** Potential Lack of Input Validation for Pi-hole  
+**19.** Potential Lack of Input Validation for Pi-hole  
 
 Category:	Tampering
 
@@ -123,6 +123,14 @@ Description:	Data flowing across Input Data Flow may be tampered with by an atta
 
 Justification:	<no mitigation provided>
 
+**31.** Potential Lack of Input Validation for Pi-hole  
+
+Category:	Tampering
+
+Description:	Data flowing across Input HTTP Data may be tampered with by an attacker. This may lead to a denial of service attack against Pi-hole or an elevation of privilege attack against Pi-hole or an information disclosure by Pi-hole. Failure to verify that input is as expected is a root cause of a very large number of exploitable issues. Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved list input validation approach.
+
+Justification:	<no mitigation provided>
+          
 Repudiation
 -----------
 
