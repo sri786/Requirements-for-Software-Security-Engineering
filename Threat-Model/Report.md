@@ -12,7 +12,7 @@ Spoofing
 
 *Category:*	Spoofing
 
-Description:	Blacklist may be spoofed by an attacker and this may lead to incorrect data delivered to Network Traffic Result. Consider using a standard authentication mechanism to identify the source data store.
+Description:	Blacklist may be spoofed by an attacker and this may lead to incorrect data delivered to Network Traffic Results. Consider using a standard authentication mechanism to identify the source data store.
 
 Justification:	<no mitigation provided>
 
