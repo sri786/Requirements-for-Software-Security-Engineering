@@ -305,23 +305,23 @@ Justification:	<no mitigation provided>
 Elevation of Privilege
 ----------------------
 
-**16.** Elevation Using Impersonation  
+**13.** Elevation Using Impersonation  
 
 Category:	Elevation Of Privilege
 
-Description:	Pi-hole may be able to impersonate the context of User in order to gain additional privilege.
+Description:	Pi-hole may be able to impersonate the context of Network Traffic in order to gain additional privilege.
 
 Justification:	<no mitigation provided>
 
-**23.** Pi-hole May be Subject to Elevation of Privilege Using Remote Code Execution  
+**14.** Pi-hole May be Subject to Elevation of Privilege Using Remote Code Execution  
 
 Category:	Elevation Of Privilege
 
-Description:	User may be able to remotely execute code for Pi-hole.
+Description:	Network Traffic may be able to remotely execute code for Pi-hole.
 
 Justification:	<no mitigation provided>
 
-**24.** Elevation by Changing the Execution Flow in Pi-hole 
+**15.** Elevation by Changing the Execution Flow in Pi-hole  
 
 Category:	Elevation Of Privilege
 
@@ -329,13 +329,81 @@ Description:	An attacker may pass data into Pi-hole in order to change the flow 
 
 Justification:	<no mitigation provided>
 
-**25.** Cross Site Request Forgery 
+**16.** Cross Site Request Forgery  
 
 Category:	Elevation Of Privilege
 
 Description:	Cross-site request forgery (CSRF or XSRF) is a type of attack in which an attacker forces a user's browser to make a forged request to a vulnerable site by exploiting an existing trust relationship between the browser and the vulnerable web site.  In a simple scenario, a user is logged in to web site A using a cookie as a credential.  The other browses to web site B.  Web site B returns a page with a hidden form that posts to web site A.  Since the browser will carry the user's cookie to web site A, web site B now can take any action on web site A, for example, adding an admin to an account.  The attack can be used to exploit any requests that the browser automatically authenticates, e.g. by session cookie, integrated authentication, IP whitelisting, …  The attack can be carried out in many ways such as by luring the victim to a site under control of the attacker, getting the user to click a link in a phishing email, or hacking a reputable web site that the victim will visit. The issue can only be resolved on the server side by requiring that all authenticated state-changing requests include an additional piece of secret payload (canary or CSRF token) which is known only to the legitimate web site and the browser and which is protected in transit through SSL/TLS. See the Forgery Protection property on the flow stencil for a list of mitigations.
 
 Justification:	<no mitigation provided>
+          
+**24.** Elevation Using Impersonation  
+
+Category:	Elevation Of Privilege
+
+Description:	Pi-hole may be able to impersonate the context of CLI user in order to gain additional privilege.
+
+Justification:	<no mitigation provided>
+
+**25.** Pi-hole May be Subject to Elevation of Privilege Using Remote Code Execution  
+
+Category:	Elevation Of Privilege
+
+Description:	CLI user may be able to remotely execute code for Pi-hole.
+
+Justification:	<no mitigation provided>
+
+**26.** Elevation by Changing the Execution Flow in Pi-hole  
+
+Category:	Elevation Of Privilege
+
+Description:	An attacker may pass data into Pi-hole in order to change the flow of program execution within Pi-hole to the attacker's choosing.
+
+Justification:	<no mitigation provided>
+
+**27.** Cross Site Request Forgery
+
+Category:	Elevation Of Privilege
+
+Description:	Cross-site request forgery (CSRF or XSRF) is a type of attack in which an attacker forces a user's browser to make a forged request to a vulnerable site by exploiting an existing trust relationship between the browser and the vulnerable web site.  In a simple scenario, a user is logged in to web site A using a cookie as a credential.  The other browses to web site B.  Web site B returns a page with a hidden form that posts to web site A.  Since the browser will carry the user's cookie to web site A, web site B now can take any action on web site A, for example, adding an admin to an account.  The attack can be used to exploit any requests that the browser automatically authenticates, e.g. by session cookie, integrated authentication, IP whitelisting, …  The attack can be carried out in many ways such as by luring the victim to a site under control of the attacker, getting the user to click a link in a phishing email, or hacking a reputable web site that the victim will visit. The issue can only be resolved on the server side by requiring that all authenticated state-changing requests include an additional piece of secret payload (canary or CSRF token) which is known only to the legitimate web site and the browser and which is protected in transit through SSL/TLS. See the Forgery Protection property on the flow stencil for a list of mitigations.
+
+Justification:	<no mitigation provided>
+
+**29.** Elevation Using Impersonation
+
+Category:	Elevation Of Privilege
+
+Description:	Pi-hole may be able to impersonate the context of Web user in order to gain additional privilege.
+
+Justification:	<no mitigation provided>
+
+**36.** Pi-hole May be Subject to Elevation of Privilege Using Remote Code Execution
+
+Category:	Elevation Of Privilege
+
+Description:	Web user may be able to remotely execute code for Pi-hole.
+
+Justification:	<no mitigation provided>
+
+**37.** Elevation by Changing the Execution Flow in Pi-hole
+
+Category:	Elevation Of Privilege
+
+Description:	An attacker may pass data into Pi-hole in order to change the flow of program execution within Pi-hole to the attacker's choosing.
+
+Justification:	<no mitigation provided>
+
+**38.** Cross Site Request Forgery
+
+Category:	Elevation Of Privilege
+
+Description:	Cross-site request forgery (CSRF or XSRF) is a type of attack in which an attacker forces a user's browser to make a forged request to a vulnerable site by exploiting an existing trust relationship between the browser and the vulnerable web site.  In a simple scenario, a user is logged in to web site A using a cookie as a credential.  The other browses to web site B.  Web site B returns a page with a hidden form that posts to web site A.  Since the browser will carry the user's cookie to web site A, web site B now can take any action on web site A, for example, adding an admin to an account.  The attack can be used to exploit any requests that the browser automatically authenticates, e.g. by session cookie, integrated authentication, IP whitelisting, …  The attack can be carried out in many ways such as by luring the victim to a site under control of the attacker, getting the user to click a link in a phishing email, or hacking a reputable web site that the victim will visit. The issue can only be resolved on the server side by requiring that all authenticated state-changing requests include an additional piece of secret payload (canary or CSRF token) which is known only to the legitimate web site and the browser and which is protected in transit through SSL/TLS. See the Forgery Protection property on the flow stencil for a list of mitigations.
+
+Justification:	<no mitigation provided>
+
+
+
+
 
 
 
